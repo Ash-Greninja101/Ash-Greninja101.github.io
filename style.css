@@ -188,9 +188,6 @@ img {
 h2 {
   margin: 2%;
 }
-.training-container p {
-  margin: 2%;
-}
 #info {
   z-index: 3;
   visibility: visible;
@@ -303,4 +300,12 @@ h2 {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+form, .training-container p{
+  margin: 2%;
+}
+.clear{
+  text-align: left;
+  background: transparent;
+  border: none;
 }
