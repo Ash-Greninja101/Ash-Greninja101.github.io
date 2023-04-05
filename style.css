@@ -1,0 +1,306 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css");
+
+#background {
+  background-image: linear-gradient(black, #005);
+  opacity: 1;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  color: azure;
+  overflow-y: scroll;
+}
+
+body {
+  background-color: black;
+  height: 100%;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#start-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#start-btn span::after {
+  /* content: "\00bb"; */
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.front {
+  position: relative;
+  float: right;
+  width: 20%;
+  height: 100%;
+  top: 0;
+  z-index: 5;
+  animation: fadein 2s;
+  padding: 2%;
+  font-size: large;
+}
+#menu-btn{
+  background-color: rgb(50, 50, 100);
+  width: 100%;
+}
+
+#menu-btn:hover{
+  background-color: rgb(50, 50, 50);
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+.no-italics {
+  font-style: normal;
+}
+
+#intro {
+  z-index: 4;
+  position: relative;
+  margin: 2%;
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+}
+#home-btn {
+  position: relative;
+  margin: 1%;
+  z-index: 4;
+}
+#home-btn:hover {
+  background-color: black;
+  border: thin solid;
+  border-radius: 1rem;
+}
+.link-btn {
+  position: relative;
+  margin: 1%;
+  z-index: 4;
+  color:white;
+}
+.link-btn:hover {
+  background-color: black;
+  border: thin solid;
+  border-radius: 1rem;
+  color: blue;
+  border-color: white;
+}
+#packages-container {
+  width: 100%;
+  height: auto;
+  margin-left: 3%;
+  /* align-items: flex-start;  */
+  display: flex;
+}
+.card {
+  background-color: transparent;
+  border-color: azure;
+  margin: 1rem;
+  /* justify-content: center; */
+  width: auto;
+}
+
+hr {
+  height: 1rem;
+}
+img {
+  height: 15rem;
+  width: auto;
+}
+.trip-container {
+  width: 90%;
+  height: fit-content;
+  border-color: white;
+  border: thin solid;
+  margin: 2%;
+  background-color: black;
+  text-align: center;
+}
+.trip-img {
+  width: 90%;
+  height: auto;
+  margin: 2%;
+}
+.website-citation-container{
+  width: 90%;
+  height: fit-content;
+  border-color: white;
+  border: thin solid;
+  margin: 2%;
+  background-color: black;
+  text-align: center;
+  z-index: 4;
+  justify-content: left;
+}
+.shuttle-info-container {
+  width: 90%;
+  height: fit-content;
+  border-color: white;
+  border: thin solid;
+  margin: 2%;
+  background-color: black;
+  text-align: center;
+}
+.container{
+  width: 90%;
+  height: fit-content;
+  border-color: white;
+  border: thin solid;
+  margin: 2%;
+  background-color: black;
+  text-align: center;
+  
+}
+
+.launch-retrieval{
+  font-size: 120%;
+  text-align: left;
+}
+.launch-retrieval b{
+  font-size: 150%;
+}
+.body-text{
+  margin-left: 5%;
+}
+
+.shuttle-img {
+  width: 50%;
+  height: auto;
+  margin: 2%;
+}
+h2 {
+  margin: 2%;
+}
+.training-container p {
+  margin: 2%;
+}
+#info {
+  z-index: 3;
+  visibility: visible;
+  top: 0;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  /* opacity: 0.5; */
+  /* animation: fadein 2s; */
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  text-align: center;
+}
+
+.mySlides img{
+  height: 40rem;
+  width: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  /* user-select: none; */
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.hidden {
+  display: none;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.starter {
+  display: block;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
