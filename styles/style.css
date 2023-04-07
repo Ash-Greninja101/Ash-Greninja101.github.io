@@ -46,12 +46,12 @@ body {
   padding: 2%;
   font-size: large;
 }
-#menu-btn{
+#menu-btn {
   background-color: rgb(50, 50, 100);
   width: 100%;
 }
 
-#menu-btn:hover{
+#menu-btn:hover {
   background-color: rgb(50, 50, 50);
 }
 @keyframes fadein {
@@ -89,11 +89,20 @@ body {
   border: thin solid;
   border-radius: 1rem;
 }
+#continue-to-web {
+  position: relative;
+  margin: 1%;
+  z-index: 4;
+}
+#continue-to-web:hover {
+  cursor: pointer;
+  border-radius: 4rem;
+}
 .link-btn {
   position: relative;
   margin: 1%;
   z-index: 4;
-  color:white;
+  color: white;
 }
 .link-btn:hover {
   background-color: black;
@@ -109,7 +118,7 @@ body {
   /* align-items: flex-start;  */
   display: flex;
 }
-.card {
+.card-trans {
   background-color: transparent;
   border-color: azure;
   margin: 1rem;
@@ -138,7 +147,7 @@ img {
   height: auto;
   margin: 2%;
 }
-.website-citation-container{
+.website-citation-container {
   width: 90%;
   height: fit-content;
   border-color: white;
@@ -158,7 +167,7 @@ img {
   background-color: black;
   text-align: center;
 }
-.container{
+.container {
   width: 90%;
   height: fit-content;
   border-color: white;
@@ -166,17 +175,16 @@ img {
   margin: 2%;
   background-color: black;
   text-align: center;
-  
 }
 
-.launch-retrieval{
+.launch-retrieval {
   font-size: 120%;
   text-align: left;
 }
-.launch-retrieval b{
+.launch-retrieval b {
   font-size: 150%;
 }
-.body-text{
+.body-text {
   margin-left: 5%;
 }
 
@@ -198,7 +206,9 @@ h2 {
   /* opacity: 0.5; */
   /* animation: fadein 2s; */
 }
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -212,13 +222,14 @@ h2 {
   text-align: center;
 }
 
-.mySlides img{
+.mySlides img {
   height: 40rem;
   width: auto;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -240,7 +251,8 @@ h2 {
 }
 
 /* On hover, add a grey background color */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: #f1f1f1;
   color: black;
 }
@@ -277,7 +289,8 @@ h2 {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -298,14 +311,132 @@ h2 {
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
-form, .training-container p{
+form,
+.training-container p {
   margin: 2%;
 }
-.clear{
+.clear {
   text-align: left;
   background: transparent;
   border: none;
+}
+#booker-div {
+  padding: 1%;
+  margin-inline: 2%;
+  height: 50%;
+  justify-content: center;
+}
+div .chatbot {
+  display: hidden;
+}
+.chatbot {
+  background-color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  border-radius: 4%;
+  width: 20%;
+  height: 50%;
+  right: 0;
+  top: 40%;
+  z-index: 5;
+}
+.top {
+  height: 10%;
+  border-color: black;
+  border: thin solid;
+}
+.chat-body {
+  height: 70%;
+  border-color: black;
+  border: thin solid;
+}
+.sender-div {
+  height: 10%;
+  border-color: black;
+  border: thin solid;
+}
+.bottom {
+  height: 10%;
+  border-color: black;
+  border: thin solid;
+}
+.chat-bot-img {
+  visibility: visible;
+  max-height: 100%;
+  float: right;
+  border-radius: 20%;
+}
+.centered {
+  margin: 0;
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  width: 100%;
+  height: 10%;
+  -ms-transform: translateY(-40%);
+  transform: translateY(-40%);
+  /* background-color: black; */
+  color: white;
+  text-align: center;
+}
+/* @keyframes spin_words {
+  10% {
+    transform: translateY(-112%);
+  }
+  25% {
+    transform: translateY(-100%);
+  }
+  35% {
+    transform: translateY(-212%);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  60% {
+    transform: translateY(-312%);
+  }
+  75% {
+    transform: translateY(-300%);
+  }
+  85% {
+    transform: translateY(-412%);
+  }
+  100%{
+    transform: translateY(-400%);
+  }
+} */
+.options-div {
+  color: black;
+  transition: transform 0.4s;
+}
+.options-div hr {
+  background-color: black;
+}
+.options-div:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.sameline {
+  margin: 0;
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  width: 100%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-around;
+}
+
+.bigger-header {
+  font-size: 60px;
 }

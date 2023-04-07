@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles/options.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <title>Journey Info</title>
+  </head>
+  <body>
+    <canvas id="background">
+      <div id="container"></div>
+    </canvas>
+    <script src="scripts/script.js"></script>
+    <div
+      class="modal fade"
+      id="trainingModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalXlLabel"
+      style="display: none"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1
+              class="modal-title fs-4 display-1"
+              id="m1"
+              style="color: black; font-size: 2rem"
+            >
+              Training
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Physical Fitness Training: Astronauts must be in excellent physical
+            condition to handle the rigors of space travel. We provide a
+            customized training program to prepare our space tourists for the
+            physical demands of space travel. This training program includes
+            cardiovascular training, strength training, and flexibility
+            training.
+            <br />
+            <br />
+            Psychological Preparedness Training: Space travel can be a
+            challenging experience both physically and mentally. We provide
+            psychological preparedness training to help our space tourists deal
+            with the stress and isolation of space travel. This training program
+            includes stress management techniques, team building exercises, and
+            mental preparedness training.
+            <br />
+            <br />
+            Technical Training: Our technical training program prepares our
+            space tourists for the technical aspects of space travel, including
+            safety procedures, emergency protocols, and operating the equipment
+            onboard the spacecraft. This training program includes hands-on
+            training with spacecraft simulators, training in zero gravity
+            conditions, and spacewalk training.
+            <br />
+            <br />
+            Space History and Exploration: We believe that space travel is an
+            opportunity to learn about the universe and our place in it. Our
+            space tourists are provided with education on space history and
+            exploration, including a visit to a space museum or observatory to
+            better understand the science behind space travel.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="launchModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalXlLabel"
+      style="display: none"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1
+              class="modal-title fs-4 display-1"
+              id="m2"
+              style="color: black; font-size: 2rem"
+            >
+              Launch
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            The launch process for space travel is a critical component of the
+            journey, as it sets the stage for the rest of the mission. At Cosmic
+            Cruiselines, we take great care to ensure that our launch process is
+            safe, efficient, and reliable, so that our space tourists can have a
+            smooth and enjoyable journey to space.
+            <br />
+            <br />
+            Our spacecraft, the Celestial Voyager, is launched using a
+            specialized rocket, which is designed to provide the necessary
+            thrust to overcome the Earth's gravity and propel the spacecraft
+            into space. The rocket is equipped with a series of powerful engines
+            and is capable of generating millions of pounds of thrust to lift
+            the spacecraft off the launch pad.
+            <br />
+            <br />
+            The launch process begins with a series of checks and tests to
+            ensure that all systems are functioning properly. This includes
+            testing the rocket engines, verifying the guidance and navigation
+            systems, and ensuring that the spacecraft is properly attached to
+            the rocket.
+            <br />
+            <br />
+            Once all systems have been checked and verified, the countdown to
+            launch begins. The launch sequence is carefully choreographed, with
+            a series of precise actions and checks performed in sequence to
+            ensure a smooth and safe launch.
+            <br />
+            <br />
+            As the countdown reaches zero, the rocket engines ignite, generating
+            a massive amount of thrust that propels the spacecraft off the
+            launch pad and into the sky. The rocket accelerates rapidly,
+            reaching speeds of several thousand kilometers per hour, as it
+            climbs higher and higher into the atmosphere.
+            <br />
+            <br />
+            After several minutes of flight, the rocket engines shut down, and
+            the spacecraft separates from the rocket. The spacecraft's own
+            engines then take over, firing to propel the spacecraft into orbit
+            around the Earth.
+            <br />
+            <br />
+            Throughout the launch process, our experienced mission control team
+            monitors the spacecraft's progress and ensures that everything is
+            functioning as planned. They are ready to respond quickly to any
+            unforeseen issues that may arise, to ensure the safety and success
+            of the mission.
+            <br />
+            <br />
+            In summary, the launch process for space travel is a carefully
+            choreographed sequence of actions that requires precision and
+            expertise. At Cosmic Cruiselines, we take great care to ensure that
+            our launch process is safe, efficient, and reliable, so that our
+            space tourists can have the adventure of a lifetime with peace of
+            mind.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="safetyModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalXlLabel"
+      style="display: none"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1
+              class="modal-title fs-4 display-1"
+              id="m3"
+              style="color: black; font-size: 2rem"
+            >
+              Safety
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            The spacecraft is equipped with a range of advanced technologies,
+            including a computer-controlled guidance and navigation system, a
+            life support system, and a thermal protection system. The life
+            support system is capable of providing oxygen, water, and food to
+            the passengers during their journey, while the thermal protection
+            system ensures that the spacecraft can withstand the extreme
+            temperatures of space travel.
+            <br />
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="recoveryModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalXlLabel"
+      style="display: none"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1
+              class="modal-title fs-4 display-1"
+              id="m4"
+              style="color: black; font-size: 2rem"
+            >
+              Retrieval
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            The recovery of passengers after their spaceflight is a critical
+            aspect of the mission and is planned and executed with the utmost
+            care and attention to detail at Cosmic Cruiselines.
+            <br />
+            <br />
+            After the spaceflight experience is complete, our spacecraft, the
+            Celestial Voyager, will return to Earth and enter the atmosphere.
+            During re-entry, the spacecraft will experience high temperatures
+            and extreme forces, which must be carefully managed to ensure a safe
+            landing.
+            <br />
+            <br />
+            To recover our passengers, we use a combination of ground support
+            teams and specially designed recovery vehicles. The recovery
+            vehicles are equipped with parachutes and airbags that are deployed
+            to cushion the landing and absorb the impact of the landing.
+            <br />
+            <br />
+            As the spacecraft approaches the ground, our ground support teams
+            will be on standby, ready to provide assistance to the passengers as
+            needed. They will use specialized equipment to safely extract the
+            passengers from the spacecraft and provide medical attention and
+            support as required.
+            <br />
+            <br />
+            Our recovery teams are highly trained and experienced, with
+            expertise in a range of disciplines, including emergency medical
+            services, search and rescue operations, and hazardous materials
+            handling. They are equipped with the latest technology and
+            equipment, including advanced medical facilities, communication
+            systems, and specialized vehicles.
+            <br />
+            <br />
+            In the unlikely event of an emergency, our recovery teams are ready
+            to respond quickly and efficiently to ensure the safety and
+            well-being of our passengers.
+            <br />
+            <br />
+            In summary, the recovery of passengers after their spaceflight is a
+            critical aspect of the mission and is planned and executed with the
+            utmost care and attention to detail at Cosmic Cruiselines. We use a
+            combination of ground support teams and specially designed recovery
+            vehicles to ensure a safe and smooth recovery process for our
+            passengers.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="intro">
+      <!-- <h1>Our Plans</h1> -->
+      <div class="together" onclick="window.location='home.html';">
+        <img class="icon" src="images/logo.png" alt="the-icon" />
+        <h1 class="display-4">Cosmic Cruiselines</h1>
+      </div>
+      <a
+        href="home.html"
+        class="btn btn-secondary btn-lg active"
+        role="button"
+        id="home-btn"
+        >Home</a
+      >
+    </div>
+    <div class="div-same-line" id="options-to-explore" style="margin-top: 10%">
+      <div class="card options-div" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Training</h5>
+          <img
+            class="card-img-top"
+            src="images/revolution_plan.avif"
+            alt="Card image cap"
+          />
+          <hr />
+          <p class="card-text"></p>
+        </div>
+      </div>
+      <div
+        class="card options-div"
+        style="width: 18rem"
+        onclick="window.location='plans/plan2.html';"
+      >
+        <div class="card-body">
+          <h5 class="card-title">Launch</h5>
+          <img
+            class="card-img-top"
+            src="images/space_station_plan.jpeg"
+            alt="Card image cap"
+          />
+          <hr />
+          <p class="card-text"></p>
+        </div>
+      </div>
+      <div
+        class="card options-div"
+        style="width: 18rem"
+        onclick="window.location='plans/plan3.html';"
+      >
+        <div class="card-body">
+          <h5 class="card-title">Safety</h5>
+          <img
+            class="card-img-top"
+            src="images/moon_plan.avif"
+            alt="Card image cap"
+          />
+          <hr />
+          <p class="card-text"></p>
+        </div>
+      </div>
+      <div
+        class="card options-div"
+        style="width: 18rem"
+        onclick="window.location='plans/plan3.html';"
+      >
+        <div class="card-body">
+          <h5 class="card-title">Recovery</h5>
+          <img
+            class="card-img-top"
+            src="images/moon_plan.avif"
+            alt="Card image cap"
+          />
+          <hr />
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/modals.js"></script>
+  </body>
+</html>

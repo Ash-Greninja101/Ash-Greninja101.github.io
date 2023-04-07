@@ -5,14 +5,14 @@ window.onload = () => {
   const centerY = maxY / 2;
   let backgroundCanv = document.getElementById("background");
   let menuBtn = document.getElementById("menu-btn");
-  let itemCont = document.getElementById("item-cont");
-  itemCont.style.width = menuBtn.style.width;
+  // let itemCont = document.getElementById("item-cont");
+  // itemCont.style.width = menuBtn.style.width;
   let ctx = backgroundCanv.getContext("2d");
   let menuOptionsDiv = document.getElementById("v-pills-tab");
   // console.warn(menuBtn, menuDiv, menuOptionsDiv);
   let toggleMenu = false;
   let mousePosition = {};
-  var allowMoving = false;
+  // let optionsDiv = document.getElementById("options-to-explore");
   container.width = window.innerWidth;
   container.height = window.innerHeight;
   backgroundCanv.width = container.width;
@@ -66,24 +66,22 @@ window.onload = () => {
   }
   // function remove
   function updateStarPositionsAndAlphaVal(mP) {
-    if (allowMoving) {
-      let mousePos = mP;
-      for (let i = 0; i < starsArray.length; i++) {
-        let star = starsArray[i];
-        // let dx = ((mousePos.x - star.x) * star.z * 0.0005) / star.radius;
-        // let dy = ((mousePos.y - star.y) * star.z * 0.0005) / star.radius;
-        let dx = ((centerX - star.x) * star.z * -0.05) / star.radius;
-        let dy = ((centerY - star.y) * star.z * -0.05) / star.radius;
-        star.updatePos(dx, dy);
-        // let dist = getDistance(mousePos.x, mousePos.y, star.x, star.y);
-        // if (dist <= 50) {
-        //   star.setFadingBool(true);
-        // } else {
-        //   star.setFadingBool(false);
-        // }
-      }
-      checkAndStartFadingAllStars();
+    let mousePos = mP;
+    for (let i = 0; i < starsArray.length; i++) {
+      let star = starsArray[i];
+      // let dx = ((mousePos.x - star.x) * star.z * 0.0005) / star.radius;
+      // let dy = ((mousePos.y - star.y) * star.z * 0.0005) / star.radius;
+      let dx = ((centerX - star.x) * star.z * -0.05) / star.radius;
+      let dy = ((centerY - star.y) * star.z * -0.05) / star.radius;
+      star.updatePos(dx, dy);
+      // let dist = getDistance(mousePos.x, mousePos.y, star.x, star.y);
+      // if (dist <= 50) {
+      //   star.setFadingBool(true);
+      // } else {
+      //   star.setFadingBool(false);
+      // }
     }
+    checkAndStartFadingAllStars();
   }
   function checkAndStartFadingAllStars() {
     for (let i = 0; i < starsArray.length; i++) {
@@ -102,11 +100,11 @@ window.onload = () => {
     requestAnimationFrame(update);
   }
 
-  document.onmousemove = getMouseCoords;
-  document.onmouseenter = setMouseCoords;
-  document.onmouseleave = (e) => {
-    allowMoving = false;
-  };
+  // document.onmousemove = getMouseCoords;
+  // document.onmouseenter = setMouseCoords;
+  // document.onmouseleave = (e) => {
+  //   allowMoving = false;
+  // };
   setInterval(createCenterRandomStar, 10);
 
   function getMouseCoords(event) {
@@ -135,7 +133,7 @@ window.onload = () => {
       x: event.clientX,
       y: event.clientY,
     };
-    allowMoving = true;
+    // allowMoving = true;
   }
 
   function setMouseCoords(event) {
@@ -155,19 +153,15 @@ window.onload = () => {
     createStar(newRadius, newX, newY, newZ);
   }
   function createCenterRandomStar() {
-    if (allowMoving) {
-      let newRadius = Math.floor(Math.random() * 5);
-      let newZ = Math.random();
-      let r = Math.random();
-      let r2 = Math.random();
-      r = r >= 0.5 ? 1 : -1;
-      r2 = r2 >= 0.5 ? 1 : -1;
-      let newX = r * Math.random() * 200 + centerX;
-      let newY = r2 * Math.random() * 200 + centerY;
-      console.log("New star created ");
-      console.log(starsArray.length);
-      createStar(newRadius, newX, newY, newZ, 0);
-    }
+    let newRadius = Math.floor(Math.random() * 5);
+    let newZ = Math.random();
+    let r = Math.random();
+    let r2 = Math.random();
+    r = r >= 0.5 ? 1 : -1;
+    r2 = r2 >= 0.5 ? 1 : -1;
+    let newX = r * Math.random() * 200 + centerX;
+    let newY = r2 * Math.random() * 200 + centerY;
+    createStar(newRadius, newX, newY, newZ, 0);
   }
 
   function createStar(radius, xPos, yPos, zVal, alphaVal = 1) {
@@ -184,4 +178,7 @@ window.onload = () => {
     }
     return true;
   }
+  function showChat() {}
+
+  update();
 };

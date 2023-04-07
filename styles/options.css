@@ -1,0 +1,220 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css");
+
+#background {
+  background-image: linear-gradient(black, #005);
+  opacity: 1;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  color: azure;
+  overflow-y: scroll;
+}
+
+body {
+  background-color: black;
+  height: 100%;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+#intro {
+  z-index: 7;
+  position: relative;
+  margin: 2%;
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+}
+.front {
+  position: relative;
+  float: right;
+  width: 20%;
+  height: 100%;
+  top: 0;
+  z-index: 10;
+  animation: fadein 2s;
+  padding: 2%;
+  font-size: large;
+}
+#menu-btn {
+  background-color: rgb(50, 50, 100);
+  width: 100%;
+  height: 200%;
+  margin: 0;
+}
+
+#menu-btn:hover {
+  background-color: rgb(50, 50, 50);
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#home-btn {
+  position: relative;
+  margin: 1%;
+  z-index: 4;
+  text-align: center;
+  height: 10%;
+}
+#home-btn:hover {
+  background-color: black;
+  border: thin solid;
+  border-radius: 1rem;
+}
+.link-btn {
+  position: relative;
+  margin: 1%;
+  z-index: 4;
+  color: white;
+}
+.link-btn:hover {
+  background-color: black;
+  border: thin solid;
+  border-radius: 1rem;
+  color: blue;
+  border-color: white;
+}
+
+img {
+  height: 15rem;
+  width: auto;
+}
+
+.launch-retrieval {
+  font-size: 120%;
+  text-align: left;
+}
+.launch-retrieval b {
+  font-size: 150%;
+}
+.body-text {
+  margin-left: 5%;
+}
+
+.shuttle-img {
+  width: 50%;
+  height: auto;
+  margin: 2%;
+}
+h2 {
+  margin: 2%;
+}
+#info {
+  z-index: 6;
+  visibility: visible;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10%;
+}
+* {
+  box-sizing: border-box;
+}
+.options-div {
+  color: black;
+  transition: transform 0.4s;
+}
+.options-div hr {
+  background-color: black;
+}
+.options-div:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.sameline-center {
+  margin: 0;
+  z-index: 5;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.vertically-centered {
+  margin-bottom: 10%;
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  width: 100%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.div-same-line {
+  margin-left: 2%;
+  margin-right: 2%;
+  display: flex;
+  position: relative;
+  z-index: 5;
+  justify-content: space-around;
+  animation: fadein 2s;
+}
+.sameline {
+  margin: 0;
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.cosmic-cls-info {
+  width: 100%;
+  color: white;
+  animation: fadein 2s;
+}
+.together {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 2%;
+}
+.together:hover {
+  cursor: pointer;
+}
+span {
+  font-size: 100%;
+}
+
+h1 {
+  margin-left: 2%;
+  color: white;
+}
+.icon {
+  width: 10%;
+  height: auto;
+}
+.bigger-header {
+  font-size: 60px;
+}
+.clear {
+  text-align: left;
+  background: transparent;
+  border: none;
+}
+.centered {
+  margin: 0;
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  width: 100%;
+  height: 10%;
+  -ms-transform: translateY(-40%);
+  transform: translateY(-40%);
+  /* background-color: black; */
+  color: white;
+  text-align: center;
+}
+.overview {
+    margin-bottom: 10%;
+}
