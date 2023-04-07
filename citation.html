@@ -5,27 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="images/logo.png"/>
-    <link href="styles/style.css" rel="stylesheet" type="text/css"/>
+    <link href="styles/options.css" rel="stylesheet" type="text/css"/>
     <title>Works Cited</title>
   </head>
   <body>
-    <div id="background">
-      <div id="intro">
-        <h1>Works Cited</h1>
-        <a href="index.html" class="btn btn-secondary btn-lg active" role="button" id="home-btn">Home</a>
+    <canvas id="background">
+      <div id="container"></div>
+    </canvas>
+    <div id="intro">
+      <!-- <h1>Our Plans</h1> -->
+      <div class="together" onclick="window.location='home.html';">
+        <img class="icon" src="images/logo.png" alt="the-icon" />
+        <h1 class="display-4">Cosmic Cruiselines</h1>
       </div>
-      <hr>
-      <div class="container">
-        <p><span>Dunbar, B. (n.d.). Astronauts in training. NASA. Retrieved March 28, 2023, from </span><a href="https://www.nasa.gov/audience/forstudents/5-8/features/F_Astronauts_in_Training.html">https://www.nasa.gov/audience/forstudents/5-8/features/F_Astronauts_in_Training.html</a></p>
-        <hr>
-        <p><span>All images from: </span><a href="https://www.pickpik.com/">https://www.pickpik.com/</a> and <a href="https://unsplash.com/">https://unsplash.com/</a>
-      </div>
-      <hr>
-      <div class="container">
-        <a href="plan-of-work-log.pdf" class="btn btn-secondary btn-lg active link-btn" role="button">Plan of Work Log</a>
-        <hr>
-        <a href="copyright-checklist.pdf" class="btn btn-secondary btn-lg active link-btn" role="button">Copyright Checklist</a>
-      </div>
-    
+      <a
+        href="home.html"
+        class="btn btn-secondary btn-lg active"
+        role="button"
+        id="home-btn"
+        >Home</a
+      >
+    </div>
+    <div class="centered left front">
+      <p><span>Dunbar, B. (n.d.). Astronauts in training. NASA. Retrieved March 28, 2023, from </span><a href="https://www.nasa.gov/audience/forstudents/5-8/features/F_Astronauts_in_Training.html">https://www.nasa.gov/audience/forstudents/5-8/features/F_Astronauts_in_Training.html</a></p>
+      <p><span>All images from: </span><a href="https://www.pickpik.com/">https://www.pickpik.com/</a> and <a href="https://unsplash.com/">https://unsplash.com/</a> and <a href="https://unsplash.com/">/ahttps://www.rawpixel.com/</a>
+      <p>Logo created by using <a href="https://www.canva.com">Canva</a>
+      <br>
+      <a href="plan-of-work-log.pdf" class="btn btn-secondary btn-lg active link-btn" role="button">Plan of Work Log</a>
+      <br>
+      <a href="copyright-checklist.pdf" class="btn btn-secondary btn-lg active link-btn" role="button">Copyright Checklist</a>
+    </div>
+    <hr>
+    <div class="container front">
+      
+    </div>
+    <script src="scripts/script.js"></script>
   </body>
 </html>

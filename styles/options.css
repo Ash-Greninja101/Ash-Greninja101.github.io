@@ -20,7 +20,7 @@ body {
   overflow-y: scroll;
 }
 #intro {
-  z-index: 7;
+  z-index: 9;
   position: relative;
   margin: 2%;
   display: flex;
@@ -33,16 +33,29 @@ body {
   width: 20%;
   height: 100%;
   top: 0;
-  z-index: 10;
+  z-index: 7;
   animation: fadein 2s;
   padding: 2%;
   font-size: large;
 }
+.front-no-margin {
+  position: relative;
+  float: right;
+  width: 20%;
+  height: 100%;
+  top: 0;
+  z-index: 7;
+  animation: fadein 2s;
+  font-size: large;
+  border-style: none;
+}
 #menu-btn {
   background-color: rgb(50, 50, 100);
   width: 100%;
-  height: 200%;
-  margin: 0;
+  height: 50%;
+  margin-top: 10%;
+  margin-right: 20px;
+  right: 1000;
 }
 
 #menu-btn:hover {
@@ -78,7 +91,6 @@ body {
   background-color: black;
   border: thin solid;
   border-radius: 1rem;
-  color: blue;
   border-color: white;
 }
 
@@ -123,6 +135,11 @@ h2 {
 }
 .options-div hr {
   background-color: black;
+}
+hr {
+    height: 5px;
+    width: 100%;
+    background-color: white;
 }
 .options-div:hover {
   cursor: pointer;
@@ -173,6 +190,12 @@ h2 {
   color: white;
   animation: fadein 2s;
 }
+.card-text {
+    font-size: 20px;
+}
+.card-title {
+    font-size: 25px;
+}
 .together {
   display: flex;
   justify-content: flex-start;
@@ -216,5 +239,107 @@ h1 {
   text-align: center;
 }
 .overview {
-    margin-bottom: 10%;
+  margin-bottom: 10%;
+}
+#booker-div {
+  width: 100%;
+  height: 50%;
+  justify-content: center;
+  color: white;
+}
+.img-fluid {
+  width: 60%;
+}
+/* .centered .clear .left{
+    margin-left: 5%;
+    margin-bottom: 5%;
+} */
+.left p {
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+.upper-centered {
+  margin: 0;
+  position: absolute;
+  z-index: 5;
+  top: 40%;
+  width: 100%;
+  height: 10%;
+  -ms-transform: translateY(-40%);
+  transform: translateY(-40%);
+  /* background-color: black; */
+  color: white;
+}
+.left {
+  text-align: left;
+}
+.lefted {
+    float: left;
+    width: 50%;
+    color: white;
+}
+.sub-included {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightcyan;
+  color: black;
+  border-radius: 10%;
+}
+
+/* Style the back side */
+.flip-card-back {
+  display: flex;
+  background-color: lightskyblue;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border-radius: 10%;
+  transform: rotateY(180deg);
+}
+.flip-card-front h1{
+    color: black;
+}
+.flip-card-back h1{
+    color: black;
+}
+div.info-section {
+    height: 350px;
+    overflow: scroll;
 }

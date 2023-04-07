@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="../images/logo.png" />
-    <link href="../styles/style.css" rel="stylesheet" type="text/css" />
-    <title>Package 2</title>
+    <link href="../styles/options.css" rel="stylesheet" type="text/css" />
+    <title>Package 1</title>
   </head>
   <body>
     <script>
@@ -43,70 +43,182 @@
         dots[slideIndex - 1].className += " active";
       }
     </script>
-    <div id="background">
-      <div id="intro">
-        <h1>Plan 2 - To The International Space Station (ISS)</h1>
-        <a
-          href="../packages.html"
-          class="btn btn-secondary btn-lg active"
-          role="button"
-          id="home-btn"
-          >Back</a
-        >
+    <canvas id="background">
+      <div id="container"></div>
+    </canvas>
+    <div id="intro">
+      <div class="sub-included">
+        <div class="together" onclick="window.location='../home.html';">
+          <img class="icon" src="../images/logo.png" alt="the-icon" />
+          <h1 class="display-4">Cosmic Cruiselines</h1>
+        </div>
+        <h3>Plan 2 - Space Resident</h3>
       </div>
-      <hr />
-      <div class="trip-container">
-        <h2>The Shuttle's Trajectory</h2>
-        <img
-          class="trip-img"
-          src="../images/temporary-trajectory.png"
-          alt="*the trip image"
-        />
+      <a
+        href="../packages.html"
+        class="btn btn-secondary btn-lg active"
+        role="button"
+        id="home-btn"
+        >Back</a
+      >
+    </div>
+
+    <div class="front cosmic-cls-info">
+      <!-- <img src="..." class="rounded float-right" alt="..."> -->
+      <div class="card overview" style="width: 100%; color: black">
+        <div class="card-body">
+          <div>
+            <p class="card-text">
+              Our Space Resident package offers a unique opportunity for
+              individuals to conduct scientific experiments and research while
+              living and working aboard the International Space Station (ISS)
+              for a week. As a Space Resident, you'll receive intensive training
+              on how to operate complex equipment and conduct research in a
+              microgravity environment. You'll also learn about the various
+              ongoing experiments and projects being conducted on the ISS and
+              contribute to the scientific community with your own research.
+            </p>
+          </div>
+        </div>
       </div>
-      <hr />
-      <div class="slideshow-container">
-        <!-- Full-width images with number and caption text -->
+    </div>
+    <div class="div-same-line" style="margin-bottom: 10%">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h1>Destination</h1>
+          </div>
+          <div class="flip-card-back">
+            <h1>To the International Space Station!</h1>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h1>Travel Duration</h1>
+          </div>
+          <div class="flip-card-back">
+            <h1>5 days</h1>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h1>Cost</h1>
+          </div>
+          <div class="flip-card-back">
+            <h1>$22,000,000</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="front cosmic-cls-info">
+      <!-- <img src="..." class="rounded float-right" alt="..."> -->
+      <div class="card overview" style="width: 100%; color: black">
+        <div class="card-body">
+          <div>
+            <p class="card-text">
+              During your stay on the ISS, you'll be living and working in an
+              environment that requires careful attention to details and
+              protocols to ensure the safety of all crew members. Our package
+              includes a rigorous training program to prepare you for life
+              aboard the ISS and to ensure that you can work safely and
+              effectively in space. Our team of experienced astronauts and space
+              professionals will work closely with you to design your research
+              project and to ensure that it meets the requirements and
+              limitations of space research. You'll have access to cutting-edge
+              technology and equipment, including 3D printers, microscopes, and
+              telescopes, to support your research goals. As a Space Resident,
+              you'll be an integral part of the ongoing mission of the ISS to
+              advance scientific understanding and exploration of space. Don't
+              miss this unique opportunity to be part of the next frontier of
+              space exploration. Book your Space Resident package today and
+              become a contributor to space research and exploration!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="text">Caption Text</div> -->
+    <!-- <div class="slideshow-container">
+
         <div class="mySlides hidden starter" id="slide0">
-          <div class="numbertext">1 / 3</div>
-          <img src="../carousel_images/shuttle.jpeg" alt="shuttle" />
-          <!-- <div class="text">Caption Text</div> -->
+          <div class="numbertext">1 / 5</div>
+          <img src="../carousel_images/shuttle.jpeg" alt="shuttle">
+          
         </div>
-
+      
         <div class="mySlides hidden" id="slide1">
-          <div class="numbertext">2 / 3</div>
-          <img
-            src="../carousel_images/inside-1.jpeg"
-            alt="inside-of-shuttle-1"
-          />
-          <!-- <div class="text">Caption Two</div> -->
+          <div class="numbertext">2 / 5</div>
+          <img src="../carousel_images/inside-1.jpeg" alt="inside-of-shuttle-1">
         </div>
-
+      
         <div class="mySlides hidden" id="slide2">
-          <div class="numbertext">3 / 3</div>
-          <img
-            src="../carousel_images/inside-2.jpeg"
-            alt="inside-of-shuttle-2"
-          />
-          <!-- <div class="text">Caption Three</div> -->
+          <div class="numbertext">3 / 5</div>
+          <img src="../carousel_images/inside-2.jpeg" alt="inside-of-shuttle-2">
         </div>
 
-        <!-- Next and previous buttons -->
+        <div class="mySlides hidden" id="slide3">
+          <div class="numbertext">4 / 5</div>
+          <img src="../carousel_images/outside-1.jpeg" alt="outside-of-shuttle-1">
+        </div>
+      
+        <div class="mySlides hidden" id="slide4">
+          <div class="numbertext">5 / 5</div>
+          <img src="../carousel_images/outside-2.jpeg" alt="outside-of-shuttle-2">
+        </div>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
-      <br />
-
-      <!-- The dots/circles -->
-      <div style="text-align: center">
+      <br>
+      <div style="text-align:center">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
-      <hr />
-      <div class="cost-container">
-        <h2>Cost: $10,000,000</h2>
-        <p></p>
-      </div>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div> -->
+    <div class="container launch-retrieval">
+      <b>Launch:</b>
+      <br />
+      <span class="body-text">
+        The space shuttle is fueled with liquid hydrogen and liquid oxygen,
+        which are stored in external tanks attached to the main shuttle body.
+        Once the fueling is complete, the shuttle is moved to the launch pad and
+        secured in place. The launch countdown begins, during which various
+        systems are checked and monitored. At liftoff, the shuttle's main
+        engines ignite and the solid rocket boosters ignite a few seconds later.
+        The shuttle rises vertically into the sky, propelled by the engines and
+        boosters. After about two minutes, the boosters separate and fall back
+        to Earth, while the shuttle continues its ascent into orbit. Once the
+        shuttle reaches orbit, it separates from the external tank and prepares
+        for its mission.
+      </span>
+      <br />
+      <b>Retrieval:</b>
+      <br />
+      <span class="body-text">
+        At the end of the shuttle's mission, it prepares to return to Earth. The
+        shuttle re-enters Earth's atmosphere, which creates intense heat and
+        friction. To slow down, the shuttle deploys its landing gear and uses a
+        combination of aerodynamic braking and thruster firings. The shuttle
+        glides towards a runway, similar to a plane, and makes a horizontal
+        landing. The shuttle is then towed to a hangar for post-flight
+        processing and refurbishment, in preparation for its next mission. It's
+        important to note that the space shuttle program has been retired, with
+        the final shuttle mission taking place in 2011. However, many of the
+        technologies and techniques used in the space shuttle program continue
+        to be used in other space programs."
+      </span>
     </div>
+    <hr />
+    <div class="cost-container">
+      <h2>Cost: $3,500,000</h2>
+      <p></p>
+    </div>
+    <script src="../scripts/script.js"></script>
   </body>
 </html>

@@ -12,63 +12,38 @@
     <link rel="icon" type="image/x-icon" href="images/logo.png" />
 
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   </head>
   <body>
     <canvas id="background">
       <div id="container"></div>
     </canvas>
-    <script src="scripts/script.js"></script>
-
-    <!-- <div class="vertically-centered" id="options-to-explore"> -->
     <div id="intro">
-      <!-- <h1>Our Plans</h1> -->
       <div class="together" onclick="window.location='home.html';">
         <img class="icon" src="images/logo.png" alt="the-icon" />
         <h1 class="display-4">Cosmic Cruiselines</h1>
       </div>
-      <div class="btn-group front">
-        <button
-          class="btn btn-secondary btn-lg dropdown-toggle"
-          id="menu-btn"
-          type="button"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          <span>Menu</span>
+      <div class="btn-group">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="menu-btn" data-bs-toggle="dropdown" aria-expanded="false">
+          Menu
         </button>
-        <div class="dropdown-menu" id="item-cont">
-          <a class="dropdown-item" href="packages.html">Our Plans</a>
+        <div class="dropdown-menu" id="item-cont" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(763px, 87px, 0px);">
+          <a class="dropdown-item" href="packages.html">Travel Plans</a>
+          <a class="dropdown-item" href="journey_info.html">The Journey</a>
+          <a class="dropdown-item" href="spacecraft.html">The Spacecraft</a>
+          <a class="dropdown-item" href="booking.html">Register to Book</a>
           <a class="dropdown-item" href="citation.html">Sources</a>
-          <a class="dropdown-item" href="booking.html">Booking</a>
-          <a class="dropdown-item" href="about.html">About Us/Contant Info</a>
         </div>
       </div>
     </div>
     <div class="front cosmic-cls-info">
-      <!-- <img src="..." class="rounded float-right" alt="..."> -->
-      <div class="card overview" style="width: 100%; color: black">
-        <div class="card-body">
+      <div class="card overview" style="width: 100%; color: black; z-index: 4;">
+        <div class="card-body div-same-line">
           <div style="width: 50%">
             <p class="card-text">
               Cosmic Cruiselines is a visionary space tourism company that is on
@@ -80,33 +55,38 @@
               wonders of space firsthand.
             </p>
           </div>
+          <img src="images/moon-and-earth.jpg" alt="moon-and-earth.jpg">
         </div>
       </div>
       <div class="card overview" style="width: 100%; color: black">
-        <div class="card-body">
-          <div style="width: 50%;float:right;">
+        <div class="card-body div-same-line">
+          <img src="images/moon-cinematic.jpg" alt="moon-cinematic.jpg">
+          <div style="width: 50%; float: right">
             <p class="card-text">
-              Our team is composed of experienced professionals in the fields of space
-              engineering, technology, and tourism, who are dedicated to ensuring that
-              each and every one of our passengers has a safe, comfortable, and
-              unforgettable experience on their journey to space. We strive to provide
-              a unique and personalized experience that will leave our customers with
-              memories that will last a lifetime.
+              Our team is composed of experienced professionals in the fields of
+              space engineering, technology, and tourism, who are dedicated to
+              ensuring that each and every one of our passengers has a safe,
+              comfortable, and unforgettable experience on their journey to
+              space. We strive to provide a unique and personalized experience
+              that will leave our customers with memories that will last a
+              lifetime.
             </p>
           </div>
         </div>
       </div>
       <div class="card overview" style="width: 100%; color: black">
-        <div class="card-body">
+        <div class="card-body div-same-line">
           <div style="width: 50%">
             <p class="card-text">
-              At Cosmic Cruiselines, we believe that space travel is not only a form
-        of entertainment, but also an opportunity to advance scientific
-        knowledge and explore the mysteries of the universe. We are committed to
-        promoting and supporting scientific research and education initiatives
-        that will help us to better understand our place in the cosmos.
+              At Cosmic Cruiselines, we believe that space travel is not only a
+              form of entertainment, but also an opportunity to advance
+              scientific knowledge and explore the mysteries of the universe. We
+              are committed to promoting and supporting scientific research and
+              education initiatives that will help us to better understand our
+              place in the cosmos.
             </p>
           </div>
+          <img src="images/man-on-moon.jpg" alt="man-on-moon.jpg">
         </div>
       </div>
       <p>
@@ -115,14 +95,14 @@
       </p>
     </div>
     <br />
-    <div class="div-same-line">
+    <div class="div-same-line" style="margin-bottom: 5%;">
       <div
         class="card options-div"
         style="width: 18rem"
         onclick="window.location='packages.html';"
       >
         <div class="card-body">
-          <h5 class="card-title">The Plans</h5>
+          <h5 class="card-title">Travel Plans</h5>
           <img
             class="card-img-top"
             src="images/plans_option.jpeg"
@@ -157,7 +137,7 @@
           <h5 class="card-title">The Spacecraft</h5>
           <img
             class="card-img-top"
-            src="images/spacecraft_option.jpeg"
+            src="images/shuttle-at-moon.jpg"
             alt="Card image cap"
           />
           <hr />
@@ -165,14 +145,29 @@
         </div>
       </div>
     </div>
-    <div class="chatbot">
-      <div class="top"></div>
-      <div class="chat-body"></div>
-      <div class="sender-div"></div>
-      <div class="bottom">
-        <img src="images/chatbot.jpeg" alt="chatbot-img" class="chat-bot-img" />
+    <hr style="position: absolute;height:5px;z-index:6;"\>
+    <div class="div-same-line" style="margin-top: 10%;">
+      <div class="front lefted" style="margin-left:1%;">
+        <h1>Contact Info:</h1>
+        <br>
+        <section style="margin-left: 5%">
+          <p>
+            Email Address:
+            <a href="#"
+              > example@xyz.abc.com</a
+            >
+          </p>
+          <p>
+            Call Us:
+            <span> (314)-XXX-XXXX</span>
+          </p>
+        </section>
       </div>
+      <img src="images/fixing-shuttle.jpg" class="rounded"style="width:50%;height: auto;" alt="person-in-space">
     </div>
-    <script src="scripts/options.js"></script>
+    <div class="front lefted">
+      <p>*Boostrap framework was used in the development of this website.</p>
+    </div>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
