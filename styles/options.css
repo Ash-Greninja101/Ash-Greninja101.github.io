@@ -354,3 +354,8 @@ div.info-section {
   /* top right bottom left */
   margin: 0% 15% 3% 15%
 }
+
+.transparent-outlined {
+  border: 15px solid rgba(255,255,255,0.2);
+  border-radius: 3%;
+}
