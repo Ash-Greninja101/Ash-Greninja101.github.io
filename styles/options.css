@@ -364,3 +364,15 @@ div.info-section {
   border: 15px solid rgba(255,255,255,0.2);
   border-radius: 3%;
 }
+
+.card-overview {
+  width: 90%; 
+  color: black; 
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 10px;
+  z-index: 4;
+  margin-bottom: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
