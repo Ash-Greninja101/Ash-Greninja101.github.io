@@ -99,7 +99,7 @@
     <br />
     <div class="div-same-line" id="options-to-explore" style="margin-top: 10%">
       <div class="card options-div" style="width: 18rem" onclick="window.location='packages.html';">
-        <div class="card-body">
+        <div class="card-body" onmousemove="updateTilt(this, event)">
           <h5 class="card-title">Travel Plans</h5>
           <img
             class="card-img-top"
@@ -115,7 +115,7 @@
         style="width: 18rem"
         onclick="window.location='journey_info.html';"
       >
-        <div class="card-body">
+        <div class="card-body" onmousemove="updateTilt(this, event)">
           <h5 class="card-title">The Journey</h5>
           <img
             class="card-img-top"
@@ -131,7 +131,7 @@
         style="width: 18rem"
         onclick="window.location='spacecraft.html';"
       >
-        <div class="card-body">
+        <div class="card-body" onmousemove="updateTilt(this, event)">
           <h5 class="card-title">The Spacecraft</h5>
           <img
             class="card-img-top"
@@ -169,5 +169,6 @@
       <p>*Boostrap framework was used in the development of this website.</p>
     </div>
     <script src="scripts/script.js"></script>
+    <script src="scripts/cardTilt.js"></script>
   </body>
 </html>
