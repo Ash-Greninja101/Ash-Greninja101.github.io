@@ -24,6 +24,7 @@
       <div id="container"></div>
     </canvas>
     <script src="scripts/script.js"></script>
+    <script src="scripts/cardTilt.js"></script>
     <div
       class="modal fade"
       id="trainingModal"
@@ -32,7 +33,7 @@
       style="display: none"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-xl modal-dialog-scrollable">
+      <div class="modal-dialog modal-xl modal-dialog-scrollable" >
         <div class="modal-content">
           <div class="modal-header">
             <h1
@@ -302,65 +303,73 @@
         >Home</a
       >
     </div>
-    <div class="div-same-line" id="options-to-explore" style="margin-top: 10%">
-      <div class="card options-div" style="width: 18rem">
-        <div class="card-body">
-          <h5 class="card-title">Training</h5>
-          <img
-            class="card-img-top"
-            src="images/training-img-pic.jpeg"
-            alt="Card image cap"
-          />
-          <hr />
-          <p class="card-text"></p>
+      <div class="div-same-line" id="options-to-explore" style="margin-top: 10%">
+        <div class="card-container" onmousemove="updateTilt(this, event)" onmouseleave="resetTilt(this)">
+        <div class="card options-div" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Training</h5>
+            <img
+              class="card-img-top"
+              src="images/training-img-pic.jpeg"
+              alt="Card image cap"
+            />
+            <hr />
+            <p class="card-text"></p>
+          </div>
         </div>
       </div>
-      <div
-        class="card options-div"
-        style="width: 18rem"
-        onclick="window.location='plans/plan2.html';"
-      >
-        <div class="card-body">
-          <h5 class="card-title">Launch</h5>
-          <img
-            class="card-img-top"
-            src="images/spacecraft_option.jpeg"
-            alt="Card image cap"
-          />
-          <hr />
-          <p class="card-text"></p>
+      <div class="card-container" onmousemove="updateTilt(this, event)" onmouseleave="resetTilt(this)">
+        <div
+          class="card options-div"
+          style="width: 18rem"
+          onclick="window.location='plans/plan2.html';"
+        >
+          <div class="card-body">
+            <h5 class="card-title">Launch</h5>
+            <img
+              class="card-img-top"
+              src="images/spacecraft_option.jpeg"
+              alt="Card image cap"
+            />
+            <hr />
+            <p class="card-text"></p>
+          </div>
+        </div>
+        </div>
+        <div class="card-container" onmousemove="updateTilt(this, event)" onmouseleave="resetTilt(this)">
+        <div
+          class="card options-div"
+          style="width: 18rem"
+          onclick="window.location='plans/plan3.html';"
+        >
+          <div class="card-body">
+            <h5 class="card-title">Safety</h5>
+            <img
+              class="card-img-top"
+              src="images/safety-img.jpeg"
+              alt="Card image cap"
+            />
+            <hr />
+            <p class="card-text"></p>
+          </div>
         </div>
       </div>
-      <div
-        class="card options-div"
-        style="width: 18rem"
-        onclick="window.location='plans/plan3.html';"
-      >
-        <div class="card-body">
-          <h5 class="card-title">Safety</h5>
-          <img
-            class="card-img-top"
-            src="images/safety-img.jpeg"
-            alt="Card image cap"
-          />
-          <hr />
-          <p class="card-text"></p>
-        </div>
-      </div>
-      <div
-        class="card options-div"
-        style="width: 18rem"
-        onclick="window.location='plans/plan3.html';"
-      >
-        <div class="card-body">
-          <h5 class="card-title">Recovery</h5>
-          <img
-            class="card-img-top"
-            src="images/recovery.jpeg"
-            alt="Card image cap"
-          />
-          <hr />
-          <p class="card-text"></p>
+      <div class="card-container" onmousemove="updateTilt(this, event)" onmouseleave="resetTilt(this)">
+        <div
+          class="card options-div"
+          style="width: 18rem"
+          onclick="window.location='plans/plan3.html';"
+        >
+          <div class="card-body">
+            <h5 class="card-title">Recovery</h5>
+            <img
+              class="card-img-top"
+              src="images/recovery.jpeg"
+              alt="Card image cap"
+            />
+            <hr />
+            <p class="card-text"></p>
+          </div>
         </div>
       </div>
     </div>
