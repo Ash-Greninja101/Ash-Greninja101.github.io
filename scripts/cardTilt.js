@@ -31,6 +31,7 @@ function updateTilt(container, e){
 function updateColor(card){
     // update color of card based on vertical tilt, to simulate lighting
     card.style.background = `rgb(${originalColor[0] - yTilt},${originalColor[1] - yTilt},${originalColor[2] - yTilt}`;
+    // console.log(getComputedStyle(card).transform);
 
 }
 
