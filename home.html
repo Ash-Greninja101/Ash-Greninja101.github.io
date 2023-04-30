@@ -98,8 +98,13 @@
     </div>
     <br />
     <div class="div-same-line" id="options-to-explore" style="margin-top: 10%">
-      <div class="card options-div" style="width: 18rem" onclick="window.location='packages.html';">
-        <div class="card-body" onmousemove="updateTilt(this, event)">
+      <div class="card options-div" 
+      style="width: 18rem" 
+      onclick="window.location='packages.html';"
+      onmousemove="updateTilt(this, event)"
+      onmouseleave="resetTilt(this)"
+      >
+        <div class="card-body">
           <h5 class="card-title">Travel Plans</h5>
           <img
             class="card-img-top"
@@ -114,8 +119,10 @@
         class="card options-div"
         style="width: 18rem"
         onclick="window.location='journey_info.html';"
+        onmousemove="updateTilt(this, event)"
+        onmouseleave="resetTilt(this)"
       >
-        <div class="card-body" onmousemove="updateTilt(this, event)">
+        <div class="card-body">
           <h5 class="card-title">The Journey</h5>
           <img
             class="card-img-top"
@@ -130,8 +137,10 @@
         class="card options-div"
         style="width: 18rem"
         onclick="window.location='spacecraft.html';"
+        onmousemove="updateTilt(this, event)"
+        onmouseleave="resetTilt(this)"
       >
-        <div class="card-body" onmousemove="updateTilt(this, event)">
+        <div class="card-body">
           <h5 class="card-title">The Spacecraft</h5>
           <img
             class="card-img-top"
