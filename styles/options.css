@@ -131,7 +131,10 @@ h2 {
 }
 .options-div {
   color: black;
-  transition: scale 0.4s;
+  transition: transform 0.04s ease;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transform: rotateX(var(--rotateX)) rotateY(var(--rotateY));
 }
 .options-div hr {
   background-color: black;
@@ -143,7 +146,7 @@ hr {
 }
 .options-div:hover {
   cursor: pointer;
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
 }
 .sameline-center {
   margin: 0;
