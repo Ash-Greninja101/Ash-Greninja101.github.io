@@ -416,3 +416,8 @@ div.info-section {
   padding: 2%;
   text-align: center;
 }
+#ham-menu-btn {
+  height: 50px;
+  width: auto;
+  margin: 0%;
+}
