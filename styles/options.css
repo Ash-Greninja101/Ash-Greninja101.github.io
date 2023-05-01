@@ -376,7 +376,7 @@ div.info-section {
   font-size: 2em;
   text-align: center;
   background-color: rgba(0,0,0,0.5);
-  border-bottom: solid red;
+  border-bottom: solid skyblue;
   border-bottom-width: 4%;
   width: auto;
   /* top right bottom left */
