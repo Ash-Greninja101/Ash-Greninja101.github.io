@@ -176,6 +176,7 @@ hr {
   justify-content: space-around;
   /* animation: fadein 2s; */
   animation:none;
+  align-items: center;
 }
 .sameline {
   margin: 0;
