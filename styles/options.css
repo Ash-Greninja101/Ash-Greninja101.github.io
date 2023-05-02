@@ -432,3 +432,17 @@ div.info-section {
 .card-container:hover {
   transform: scale(1.2);
 }
+
+.btn-secondary {
+  transition: 0.2s ease;
+  border: solid rgb(255,255,255,0.0) 2px;
+  box-shadow: none;
+}
+
+.btn-secondary:focus{
+  box-shadow: none;
+}
+
+.btn-secondary:hover {
+  border: solid rgb(255,255,255,0.5) 2px;
+}
