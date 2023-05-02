@@ -29,14 +29,34 @@
         <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
       </svg></a>
     </div>
-    <div class="chatbot">
-      <div class="top"></div>
-      <div class="chat-body"></div>
+    <div class="chatbot-window front transparent-outlined">
+      <div class="chatbot-top">
+        <h3>Chat With CC!</h3>
+      </div>
+      <div class="chat-body">
+        <div class="imessage">
+          <p class="from-them no-tail">Hello there, I am Cosmic Cruiser your virtual assistant.</p>
+          <p class="from-them no-tail">How can I help you today? Please select one:</p>
+          <p class="from-them">
+            <a href="booking.html">Registration</a>
+            <br \>
+            <a href="packages.html">Our Plans</a>
+            <br \>
+            <a href="packages.html">Cost for Plans</a>
+            <br \>
+            <a href="packages.html">Others</a>
+          </p>
+          <p class="from-them no-tail"><a href="packages.html">Our Plans</a></p>
+          <p class="from-them no-tail"><a href="packages.html">Cost for Plans</a></p>
+          <p class="from-them"><a href="packages.html">Others</a></p>
+        </div>
+      </div>
       <div class="sender-div"></div>
-      <div class="bottom">
-        <img src="images/chatbot.jpeg" alt="chatbot-img" class="chat-bot-img" onclick="showChat()">
+      <div class="chatbot-bottom">
+        <img src="images/chatbot.jpeg" alt="chatbot-img" id="chatbot-toggler" \>
       </div>
     </div>
     <script src="scripts/script.js"></script>
+    <script src="scripts/chatbot.js"></script>
   </body>
 </html>

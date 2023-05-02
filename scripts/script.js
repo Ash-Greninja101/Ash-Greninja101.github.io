@@ -178,7 +178,6 @@ window.onload = () => {
     }
     return true;
   }
-  function showChat() {}
 
   update();
 };
