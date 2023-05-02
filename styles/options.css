@@ -49,14 +49,23 @@ body {
   font-size: large;
   border-style: none;
 }
+.to-front {
+  position: relative;
+  z-index: 7;
+  animation: fadein 2s;
+}
 #menu-btn {
-  background-color: transparent;
-  width: fit-content;
-  width: -moz-fit-content;
-  height: fit-content;
-  margin-right: 1%;
+  background-color: rgb(50, 50, 100);
+  width: 100%;
+  height: 50%;
+  margin-top: 10%;
+  margin-right: 20px;
+  right: 1000;
 }
 
+#menu-btn:hover {
+  background-color: rgb(50, 50, 50);
+}
 @keyframes fadein {
   from {
     opacity: 0;
@@ -389,78 +398,215 @@ div.info-section {
   border: 15px solid rgba(255,255,255,0.2);
   border-radius: 3%;
 }
-
-.card-overview {
-  width: 90%; 
-  color: black; 
-  background-color: rgb(230, 230, 240);
-  border: 5px solid rgb(230, 230, 240);
-  border-radius: 10px;
-  z-index: 4;
-  margin-bottom: 10%;
-  margin-left: 5%;
-  margin-right: 5%;
-  transition-duration: 0.6s;
+.chatbot-window{
+  float: right;
+  /* position: absolute; */
+  height: 600px;
+  width: 400px;
+  background-color: white;
+  /* border: 10px solid black; */
+  visibility: hidden;
+  /* border-radius: 10%; */
+}
+.chatbot-top{
+  height: 10%;
+  width: 100%;
+}
+.chatbot-bottom{
+  border-top: 5px solid black;
+  height: 10%;
+  width: 100%;
+}
+.sender-div{
+  height: 10%;
+  width: 100%;
+}
+.chat-body{
+  height: 70%;
+  width: 100%;
+  border-top: 10px solid black;
+  border-bottom: 10px solid black;
+  overflow-y: scroll;
+}
+.chatbot-bottom img{
+  height: 80%;
+  width: auto;
+  float: right;
+  border-radius: 20%;
   
+  visibility: visible;
 }
-
-.card-overview:hover {
-  box-shadow: 0px 5px rgba(255, 255, 255, 0.5);
-  transform: translate(0px, -5px);
-  transition-duration: 0.3s;
+.chatbot-bottom img:hover{
+  cursor: pointer;
+  border-radius: 30%;
 }
-
-.contact-info {
-  background-color: rgba(230, 230, 240, 0.2);
-  margin: 20px;
-  border: solid rgba(230, 230, 240, 0.3) 5px;
-  border-radius: 10px;
+.menu-item{
   padding: 2%;
-  text-align: center;
+  margin-left: 3%;
+  margin-bottom: 1.5%;
+  border: 15px solid black;
 }
 #ham-menu-btn {
   height: 50px;
   width: auto;
   margin: 0%;
 }
-
-.card-container {
-  /* border: solid 2px red; */
-  transition: 0.4s ease;
+.imessage {
+  background-color: #fff;
+  border: 1px solid #e5e5ea;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  font-family: "SanFrancisco";
+  font-size: 1rem;
+  margin: 0 auto 1rem;
+  max-width: 600px;
+  padding: 0.5rem 1.5rem;
 }
 
-.card-container:hover {
-  transform: scale(1.2);
+.imessage p {
+  border-radius: 1.15rem;
+  line-height: 1.25;
+  max-width: 75%;
+  padding: 0.5rem .875rem;
+  position: relative;
+  word-wrap: break-word;
+  margin: none;
 }
 
-.btn-secondary {
-  transition: 0.2s ease;
-  border: solid rgb(255,255,255,0.0) 2px;
-  box-shadow: none;
+.imessage p::before,
+.imessage p::after {
+  bottom: -0.1rem;
+  content: "";
+  height: 1rem;
+  position: absolute;
 }
 
-.btn-secondary:focus{
-  box-shadow: none;
+p.from-me {
+  align-self: flex-end;
+  background-color: #248bf5;
+  color: #fff; 
 }
 
-.btn-secondary:hover {
-  border: solid rgb(255,255,255,0.5) 2px;
+p.from-me::before {
+  border-bottom-left-radius: 0.8rem 0.7rem;
+  border-right: 1rem solid #248bf5;
+  right: -0.35rem;
+  transform: translate(0, -0.1rem);
 }
 
-/* hamburger menu styling */
-.menu-item {
-  margin:15px;
-  width: auto;
-  transition: 0.2s ease;
-  padding-left:25px;
-  border-radius: 15px;
+p.from-me::after {
+  background-color: #fff;
+  border-bottom-left-radius: 0.5rem;
+  right: -40px;
+  transform:translate(-30px, -2px);
+  width: 10px;
 }
 
-.menu-item:hover {
-  background-color: lightgray;
-  transform: scale(1.05);
+p[class^="from-"] {
+  margin: 0.5rem 0;
+  width: fit-content;
+  width: -moz-fit-content;
 }
 
-.menu-item::before {
-  content: "     ";
+p.from-me ~ p.from-me {
+  margin: 0.25rem 0 0;
+}
+
+p.from-me ~ p.from-me:not(:last-child) {
+  margin: 0.25rem 0 0;
+}
+
+p.from-me ~ p.from-me:last-child {
+  margin-bottom: 0.5rem;
+}
+
+p.from-them {
+  align-items: flex-start;
+  background-color: #e5e5ea;
+  color: #000;
+}
+
+p.from-them:before {
+  border-bottom-right-radius: 0.8rem 0.7rem;
+  border-left: 1rem solid #e5e5ea;
+  left: -0.35rem;
+  transform: translate(0, -0.1rem);
+}
+
+p.from-them::after {
+  background-color: #fff;
+  border-bottom-right-radius: 0.5rem;
+  left: 20px;
+  transform: translate(-30px, -2px);
+  width: 10px;
+}
+
+p[class^="from-"].emoji {
+  background: none;
+  font-size: 2.5rem;
+}
+
+p[class^="from-"].emoji::before {
+  content: none;
+}
+
+.no-tail::before {
+  display: none;
+}
+
+.margin-b_none {
+  margin-bottom: 0 !important;
+}
+
+.margin-b_one {
+  margin-bottom: 1rem !important;
+}
+
+.margin-t_one {
+  margin-top: 1rem !important;
+}
+
+/* general styling */
+@font-face {
+  font-family: "SanFrancisco";
+  src:
+    url("https://cdn.rawgit.com/AllThingsSmitty/fonts/25983b71/SanFrancisco/sanfranciscodisplay-regular-webfont.woff2") format("woff2"),
+    url("https://cdn.rawgit.com/AllThingsSmitty/fonts/25983b71/SanFrancisco/sanfranciscodisplay-regular-webfont.woff") format("woff");
+}
+
+/* body {  
+  font-family: -apple-system, 
+    BlinkMacSystemFont, 
+    "Segoe UI", 
+    Roboto, 
+    Oxygen-Sans, 
+    Ubuntu, 
+    Cantarell, 
+    "Helvetica Neue", 
+    sans-serif;
+  font-weight: normal;
+  margin: 0;
+} */
+
+
+@media screen and (max-width: 800px) {
+  body {
+    margin: 0 0.5rem;
+  }
+
+  .container {
+    padding: 0.5rem;
+  }
+
+  .imessage {
+    font-size: 1.05rem;
+    margin: 0 auto 1rem;
+    max-width: 600px;
+    padding: 0.25rem 0.875rem;
+  }
+
+  .imessage p {
+    margin: 0.5rem 0;
+  }
 }

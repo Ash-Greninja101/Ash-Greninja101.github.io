@@ -17,7 +17,7 @@ window.onload = () => {
   container.height = window.innerHeight;
   backgroundCanv.width = container.width;
   backgroundCanv.height = container.height;
-
+ 
   class Star {
     constructor(x, y, z, alpha = 1, radius, fading = false) {
       this.x = x;
@@ -178,7 +178,6 @@ window.onload = () => {
     }
     return true;
   }
-  function showChat() {}
 
   update();
 };
