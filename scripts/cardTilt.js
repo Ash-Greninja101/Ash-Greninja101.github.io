@@ -16,8 +16,8 @@ function updateTilt(container, e){
     var y = (e.clientY - rect.top) / rect.height;  // normalized y position within the card.
 
     // modified x and y to be from -1 to 1, multiplied by max tilt angle
-    yTilt = ((y-0.5) * 2) * 30;
-    xTilt = ((x-0.5) * 2) * 30;
+    yTilt = ((y-0.5) * 2) * 20;
+    xTilt = ((x-0.5) * 2) * 20;
 
     // set 3d rotation transform based on mouse pos
     card.style.transform = `rotateX(${yTilt}deg) rotateY(${-xTilt}deg)`;

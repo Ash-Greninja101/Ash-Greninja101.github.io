@@ -423,3 +423,12 @@ div.info-section {
   width: auto;
   margin: 0%;
 }
+
+.card-container {
+  /* border: solid 2px red; */
+  transition: 0.4s ease;
+}
+
+.card-container:hover {
+  transform: scale(1.2);
+}
