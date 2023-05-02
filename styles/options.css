@@ -446,3 +446,15 @@ div.info-section {
 .btn-secondary:hover {
   border: solid rgb(255,255,255,0.5) 2px;
 }
+
+/* hamburger menu styling */
+.menu-item {
+  margin:15px;
+  width: auto;
+  transition: 0.2s ease;
+}
+
+.menu-item:hover {
+  background-color: lightgray;
+  transform: scale(1.05);
+}
