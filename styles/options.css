@@ -289,12 +289,12 @@ h1 {
   margin-top: 3%;
   margin-left: 25px;
   margin-right: 25px;
-  position: absolute;
+  position: relative;
   display: inline-block;
   z-index: 5;
   /* top: 40%; */
   width: auto;
-  height: 100%;
+  height: auto;
   /* -ms-transform: translateY(-40%);
   transform: translateY(-40%); */
   /* background-color: black; */
