@@ -400,6 +400,8 @@ div.info-section {
 .transparent-outlined {
   border: 15px solid rgba(255,255,255,0.2);
   border-radius: 3%;
+  padding: 0px;
+  /* margin: 5px; */
 }
 
 .card-overview {
