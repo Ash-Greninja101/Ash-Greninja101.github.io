@@ -178,6 +178,16 @@ hr {
   animation:none;
   align-items: center;
 }
+.div-same-line-no-space {
+  margin-left: 2%;
+  margin-right: 2%;
+  display: flex;
+  position: relative;
+  z-index: 5;
+  /* animation: fadein 2s; */
+  animation:none;
+  align-items: center;
+}
 .sameline {
   margin: 0;
   position: relative;
@@ -450,20 +460,25 @@ div.info-section {
 
 /* hamburger menu styling */
 .menu-item {
-  margin:15px;
+  /* margin:15px; */
+  margin-bottom: 10px;
   width: auto;
   transition: 0.2s ease;
   padding-left:25px;
-  border-radius: 15px;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* border-radius: 15px; */
 }
 
 .menu-item:hover {
-  background-color: lightgray;
+  background-color: whitesmoke;
+  /* transform: translateX(-20px); */
   transform: scale(1.05);
 }
 
 .menu-item::before {
-  content: "     ";
+  /* content: "     "; */
 }
 .chatbot-window{
   float: right;
