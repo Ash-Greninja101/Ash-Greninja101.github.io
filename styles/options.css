@@ -297,8 +297,8 @@ h1 {
 .upper-centered {
   margin-bottom: 3%;
   margin-top: 3%;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
   position: relative;
   display: inline-block;
   z-index: 5;
@@ -309,7 +309,9 @@ h1 {
   transform: translateY(-40%); */
   /* background-color: black; */
   color: white;
-  text-shadow: 0px 0px 30px black;
+  box-shadow: 0px 0px 20px black;
+  background-color: rgb(0,0,0,0.5);
+  padding: 20px;
   
 }
 .left {
