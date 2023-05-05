@@ -67,8 +67,8 @@ window.onload = () => {
       let star = starsArray[i];
       // let dx = ((mousePos.x - star.x) * star.z * 0.0005) / star.radius;
       // let dy = ((mousePos.y - star.y) * star.z * 0.0005) / star.radius;
-      let dx = ((centerX - star.x) * star.z * -0.05) / star.radius;
-      let dy = ((centerY - star.y) * star.z * -0.05) / star.radius;
+      let dx = ((centerX - star.x) * star.z * -0.5) / star.radius;
+      let dy = ((centerY - star.y) * star.z * -0.5) / star.radius;
       star.updatePos(dx, dy);
       // let dist = getDistance(mousePos.x, mousePos.y, star.x, star.y);
       // if (dist <= 50) {
@@ -101,7 +101,7 @@ window.onload = () => {
   // document.onmouseleave = (e) => {
   //   allowMoving = false;
   // };
-  setInterval(createCenterRandomStar, 10);
+  setInterval(createCenterRandomStar, 5);
 
   function getMouseCoords(event) {
     let eventDoc, doc, body;
