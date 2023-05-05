@@ -47,20 +47,28 @@
       <div id="container"></div>
     </canvas>
     <div id="intro">
-      <div class="sub-included">
-        <div class="together" onclick="window.location='../home.html';">
-          <img class="icon" src="../images/logo.png" alt="the-icon" />
-          <h1 class="logo-text">Cosmic Cruiselines</h1>
-        </div>
-        <h3>Plan 2 - Space Resident</h3>
+      <div class="together" onclick="window.location='index.html';">
+        <img class="icon" src="images/logo.png" alt="the-icon" />
+        <h1 class="logo-text">Cosmic Cruiselines</h1>
       </div>
-      <a
-        href="../packages.html"
-        class="btn btn-secondary btn-lg active"
-        role="button"
-        id="home-btn"
-        >Back</a
-      >
+      <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" id="menu-btn" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <img src="images/hamburger-menu.png" id="ham-menu-btn" alt="*menu" />
+      </button>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title display-4" id="offcanvasRightLabel">Explore  <i class="fas fa-rocket"></i></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <a class="dropdown-item menu-item" href="index.html">Home</a>
+          <a class="dropdown-item menu-item" href="packages.html">Travel Plans</a>
+          <a class="dropdown-item menu-item" href="journey_info.html">The Journey</a>
+          <a class="dropdown-item menu-item" href="spacecraft.html">The Spacecraft</a>
+          <a class="dropdown-item menu-item" href="booking.html">Register to Book</a>
+          <a class="dropdown-item menu-item" href="citation.html">Sources</a>
+        </div>
+      </div>
     </div>
 
     <div class="front cosmic-cls-info">
