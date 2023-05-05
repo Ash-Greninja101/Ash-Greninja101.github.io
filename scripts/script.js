@@ -5,14 +5,10 @@ window.onload = () => {
   const centerY = maxY / 2;
   let backgroundCanv = document.getElementById("background");
   let menuBtn = document.getElementById("menu-btn");
-  // let itemCont = document.getElementById("item-cont");
-  // itemCont.style.width = menuBtn.style.width;
   let ctx = backgroundCanv.getContext("2d");
   let menuOptionsDiv = document.getElementById("v-pills-tab");
-  // console.warn(menuBtn, menuDiv, menuOptionsDiv);
   let toggleMenu = false;
   let mousePosition = {};
-  // let optionsDiv = document.getElementById("options-to-explore");
   container.width = window.innerWidth;
   container.height = window.innerHeight;
   backgroundCanv.width = container.width;

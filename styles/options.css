@@ -170,8 +170,9 @@ hr {
 .div-same-line {
   margin-left: 2%;
   margin-right: 2%;
+  width: 100%;
   display: flex;
-  position: relative;
+  position:sticky;
   z-index: 5;
   justify-content: space-around;
   /* animation: fadein 2s; */
@@ -697,4 +698,8 @@ p[class^="from-"].emoji::before {
   .imessage p {
     margin: 0.5rem 0;
   }
+}
+.header{
+  width: 100%;
+  text-align: center;
 }

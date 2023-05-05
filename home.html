@@ -1,26 +1,17 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+    <link href="styles/options.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="images/logo.png"/>
 
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous"
-  />
-  <link href="styles/options.css" rel="stylesheet" type="text/css" />
-
-  <title>Home</title>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/26d6b75079.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <title>Cosmic Cruiselines</title>
   </head>
   <body>
     <canvas id="background">
@@ -28,162 +19,52 @@
     </canvas>
     <div id="intro">
       <div class="together" onclick="window.location='home.html';">
-        <img class="icon" src="images/logo.png" alt="the-icon" />
+        <img class="icon" src="images/logo.png" alt="the-icon">
         <h1 class="logo-text">Cosmic Cruiselines</h1>
       </div>
-      <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" id="menu-btn" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-        <img src="images/hamburger-menu.png" id="ham-menu-btn" alt="*menu" />
-      </button>
-
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title display-4" id="offcanvasRightLabel">Explore  <i class="fas fa-rocket"></i></h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <a class="dropdown-item menu-item" href="packages.html">Travel Plans</a>
-          <a class="dropdown-item menu-item" href="journey_info.html">The Journey</a>
-          <a class="dropdown-item menu-item" href="spacecraft.html">The Spacecraft</a>
-          <a class="dropdown-item menu-item" href="booking.html">Register to Book</a>
-          <a class="dropdown-item menu-item" href="citation.html">Sources</a>
-        </div>
-      </div>
     </div>
-    <div class="front cosmic-cls-info">
-      <div class="card-overview">
-        <div class="card-body div-same-line">
-          <div style="width: 50%;padding: 70px 0;">
-            <p class="card-text">
-              Cosmic Cruiselines is a visionary space tourism company that is on
-              a mission to provide an unparalleled space travel experience to
-              those who seek adventure and exploration beyond the confines of
-              Earth. Our vision is to make space travel accessible to the
-              public, and to help shape the future of space exploration by
-              offering opportunities for ordinary people to experience the
-              wonders of space firsthand.
-            </p>
-          </div>
-          <img src="images/moon-and-earth.jpg" alt="moon-and-earth.jpg" class="rounded float-right">
-        </div>
-      </div>
-      <div class="card-overview">
-        <div class="card-body div-same-line">
-          <img src="images/moon-cinematic.jpg" alt="moon-cinematic.jpg" class="rounded float-left">
-          <div style="width: 50%; float: right;padding: 70px 0;">
-            <p class="card-text">
-              Our team is composed of experienced professionals in the fields of
-              space engineering, technology, and tourism, who are dedicated to
-              ensuring that each and every one of our passengers has a safe,
-              comfortable, and unforgettable experience on their journey to
-              space. We strive to provide a unique and personalized experience
-              that will leave our customers with memories that will last a
-              lifetime.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="card-overview">
-        <div class="card-body div-same-line">
-          <div style="width: 50%;padding: 70px 0;">
-            <p class="card-text">
-              At Cosmic Cruiselines, we believe that space travel is not only a
-              form of entertainment, but also an opportunity to advance
-              scientific knowledge and explore the mysteries of the universe. We
-              are committed to promoting and supporting scientific research and
-              education initiatives that will help us to better understand our
-              place in the cosmos.
-            </p>
-          </div>
-          <img src="images/man-on-moon.jpg" class="rounded float-right" alt="man-on-moon.jpg">
-        </div>
-      </div>
-      <p class="flip-card-header-text">
-        Join us on a journey to the stars, and let Cosmic Cruiselines take you
-        on an adventure of a lifetime.
-      </p>
+    <div class="centered clear">
+      <h1 class="bigger-header"><b>Welcome to Cosmic Cruiselines</b></h1><br><h1>We send you to the stars above!</h1>
+      <a href="home.html"class="btn btn-success"role="button"id="continue-to-btn">Continue To website <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+      </svg></a>
     </div>
-    <br />
-    <div class="div-same-line" id="options-to-explore" style="margin-top: 10%">
-      <div class="card-container" onmousemove="updateTilt(this, event)" onmouseleave="resetTilt(this)">
-        <div class="card options-div" 
-        style="width: 18rem; background: rgb(200, 200, 210); " 
-        onclick="window.location='packages.html';"
-        >
-          <div class="card-body">
-            <h5 class="card-title">Travel Plans</h5>
-            <img
-              class="card-img-top"
-              src="images/training-img-pic.jpeg"
-              alt="Card image cap"
-            />
-            <hr />
-            <p class="card-text">Learn about our different space plans!</p>
+    <div class="chatbot-window front transparent-outlined">
+      <div class="chatbot-top">
+        <h3>Chat With CC!</h3>
+      </div>
+      <div class="chat-body">
+        <div class="imessage">
+          <p class="from-them no-tail">Hello there, I am Cosmic Cruiser your virtual assistant.</p>
+          <p class="from-them no-tail">How can I help you today? Please select one:</p>
+          <!-- <p class="from-them">
+            <a href="booking.html">Registration</a>
+            <br \>
+            <a href="packages.html">Our Plans</a>
+            <br \>
+            <a href="packages.html">Cost for Plans</a>
+            <br \>
+            <a href="packages.html">Others</a>
+          </p> -->
+          <div class="from-them no-tail">
+            <div class="div-same-line-no-space">
+              <div class="spinner-grow spinner-grow-sm" role="status"></div>
+              <div class="spinner-grow spinner-grow-sm" role="status"></div>
+              <div class="spinner-grow spinner-grow-sm" role="status"></div>
+            </div>
           </div>
+          <p class="from-them no-tail"><a href="booking.html">Registration</a></p>
+          <p class="from-them no-tail"><a href="packages.html">Our Plans</a></p>
+          <p class="from-them no-tail"><a href="packages.html">Cost for Plans</a></p>
+          <p class="from-them"><a href="packages.html">Others</a></p>
         </div>
       </div>
-      <div class="card-container" onmousemove="updateTilt(this, event)" onmouseleave="resetTilt(this)">
-        <div
-          class="card options-div"
-          style="width: 18rem; background: rgb(200, 200, 210);"
-          onclick="window.location='journey_info.html';"
-        >
-          <div class="card-body">
-            <h5 class="card-title">The Journey</h5>
-            <img
-              class="card-img-top"
-              src="images/spacecraft_option.jpeg"
-              alt="Card image cap"
-            />
-            <hr />
-            <p class="card-text">Understand the steps in your space journey!</p>
-          </div>
-        </div>
+      <div class="sender-div"></div>
+      <div class="chatbot-bottom">
+        <img src="images/chatbot.jpeg" alt="chatbot-img" id="chatbot-toggler" \>
       </div>
-      <div class="card-container" onmousemove="updateTilt(this, event)" onmouseleave="resetTilt(this)">
-        <div
-          class="card options-div"
-          style="width: 18rem; background: rgb(200, 200, 210);"
-          onclick="window.location='spacecraft.html';"
-        >
-          <div class="card-body">
-            <h5 class="card-title">The Spacecraft</h5>
-            <img
-              class="card-img-top"
-              src="images/safety-img.jpeg"
-              alt="Card image cap"
-            />
-            <hr />
-            <p class="card-text">Know your spacecraft!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr style="position: relative; height:5px; z-index:6; margin-top:5%;"\>
-    <div class="div-same-line" style="margin-top: 10%;">
-      <div class="front lefted" style="margin-left:1%;">
-        <section class="contact-info">
-          <p>
-            <h1 style="text-align: center; text-decoration: underline;">Contact Info</h1>
-            <br>
-            <i class="fas fa-envelope"></i>
-            Email Address:
-            <a href="#"
-              > example@xyz.abc.com</a
-            >
-          </p>
-          <p>
-            <i class="fas fa-phone"></i>
-            Phone Number:
-            <span> (123)-456-7890</span>
-          </p>
-        </section>
-      </div>
-      <img class="transparent-outlined" src="images/fixing-shuttle.jpg" class="rounded"style="width:50%;height: auto;" alt="person-in-space">
-    </div>
-    <div class="front lefted">
-      <p>*Boostrap framework was used in the development of this website.</p>
     </div>
     <script src="scripts/script.js"></script>
-    <script src="scripts/cardTilt.js"></script>
+    <script src="scripts/chatbot.js"></script>
   </body>
 </html>
