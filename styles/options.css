@@ -178,6 +178,9 @@ hr {
   animation:none;
   align-items: center;
 }
+.flex-starter {
+  align-items: flex-start;
+}
 .div-same-line-no-space {
   margin-left: 2%;
   margin-right: 2%;
