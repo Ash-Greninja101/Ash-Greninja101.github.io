@@ -34,7 +34,7 @@ body {
   height: 100%;
   top: 0;
   z-index: 7;
-  animation: fadein 4s;
+  animation: fadein 3s;
   padding: 2%;
   font-size: large;
 }
@@ -45,7 +45,7 @@ body {
   height: 100%;
   top: 0;
   z-index: 7;
-  animation: fadein 4s;
+  animation: fadein 3s;
   font-size: large;
   border-style: none;
 }
@@ -175,7 +175,7 @@ hr {
   position:sticky;
   z-index: 5;
   justify-content: space-around;
-  animation: fadein 10s;
+  animation: fadein 2s;
   align-items: center;
 }
 .flex-starter {
@@ -202,7 +202,7 @@ hr {
 .cosmic-cls-info {
   width: 100%;
   color: white;
-  animation: fadein 4s;
+  animation: fadein 7s;
 }
 .card-text {
     font-size: 20px;
@@ -338,6 +338,7 @@ h1 {
 }
 .sub-included h3{
   margin-top: 2.5%;
+  margin-left: 2%;
 }
 .flip-card {
   background-color: transparent;

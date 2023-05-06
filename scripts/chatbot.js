@@ -11,3 +11,8 @@ chatbotToggler.onclick = () => {
       chatWindow.style.visibility = "hidden";
     }
 }
+
+
+function createBlinker(){
+  document.createElement("")
+}
