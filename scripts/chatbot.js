@@ -191,6 +191,7 @@ function startChatbot(){
         linkName: "Others",
         linkAddress: "packages.html"
       })
+      
     })
   })
 }

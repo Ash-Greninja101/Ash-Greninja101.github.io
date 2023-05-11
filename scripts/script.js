@@ -9,6 +9,16 @@ window.onload = () => {
   let menuOptionsDiv = document.getElementById("v-pills-tab");
   let toggleMenu = false;
   let mousePosition = {};
+  let onPage = true;
+  window.onpageshow = () => {
+    console.log("back on page");
+    onPage = true;
+  }
+  window.onpagehide = () => {
+    console.log("not on page")
+    onPage = false;
+  }
+  
   container.width = window.innerWidth;
   container.height = window.innerHeight;
   backgroundCanv.width = container.width;
@@ -93,7 +103,9 @@ window.onload = () => {
     clear();
     drawStars();
     updateStarPositionsAndAlphaVal(mousePosition);
-    requestAnimationFrame(update);
+    if (onPage) {
+      requestAnimationFrame(update);
+    }
   }
 
   // document.onmousemove = getMouseCoords;
@@ -101,7 +113,7 @@ window.onload = () => {
   // document.onmouseleave = (e) => {
   //   allowMoving = false;
   // };
-  setInterval(createCenterRandomStar, 5);
+  setInterval(createRandomStar, 5);
 
   function getMouseCoords(event) {
     let eventDoc, doc, body;
