@@ -74,6 +74,16 @@ class ClientMessage {
   }
 }
 
+class BotMessageWithLink extends BotMessage {
+  constructor(message, linkInfo){
+    super(message);
+    let alink = document.createElement("a");
+    alink.innerHTML = linkInfo.linkName;
+    alink.href = linkInfo.linkAddress;
+    this.message.appendChild(alink);
+  }
+}
+
 let chatbotToggler = document.getElementById("chatbot-toggler");
 let chatWindow = document.getElementsByClassName("chatbot-window")[0];
 let menuWindow = document.getElementById("offcanvasRight");
@@ -134,8 +144,13 @@ chatbotToggler.onclick = () => {
 
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
 
-function showMsgAfterTimeout(msg, milliSec){
-  let m = new BotMessage(msg);
+function showMsgAfterTimeout(msg, milliSec, linkInfo=null){
+  let m;
+  if (linkInfo !== null){
+    m = new BotMessageWithLink(msg, linkInfo)
+  } else {
+    m = new BotMessage(msg);
+  }
   let b = new Blinker();
   b.addToDiv(chatBody);
   m.addToDiv(chatBody);
@@ -143,6 +158,7 @@ function showMsgAfterTimeout(msg, milliSec){
   sleep(milliSec).then(() => {
     b.hide();
     m.display();
+    m.scrollIntoView(true);
   })
 }
 function removeAllChildNodes(parent){
@@ -154,5 +170,27 @@ function startChatbot(){
   showMsgAfterTimeout("Hello there, I am Cosmic Cruiser your virtual assistant.", 1000);
   sleep(1000).then(() => {
     showMsgAfterTimeout("How can I help you today? Please select one:", 1000);
+    sleep(1000).then(() => {
+      showMsgAfterTimeout("To register for the program click here -> ",1000,
+      {
+        linkName: "Registration",
+        linkAddress: "booking.html"
+      })
+      showMsgAfterTimeout("To learn about the matters click here -> ",1000,
+      {
+        linkName: "Our Plans",
+        linkAddress: "packages.html"
+      })
+      showMsgAfterTimeout("To learn about the cost of the different plans click here -> ",1000,
+      {
+        linkName: "Cost of Plans",
+        linkAddress: "packages.html"
+      })
+      showMsgAfterTimeout("If none of the above work then click here -> ",1000,
+      {
+        linkName: "Others",
+        linkAddress: "packages.html"
+      })
+    })
   })
 }

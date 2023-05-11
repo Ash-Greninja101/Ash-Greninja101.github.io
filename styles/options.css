@@ -715,7 +715,7 @@ p[class^="from-"].emoji::before {
   border-radius: 50px;
   padding: 10px;
   display: table;
-  /* margin: 0 auto; */
+  margin-bottom: 2%;
   position: relative;
   -webkit-animation: 2s bulge infinite ease-out;
           animation: 2s bulge infinite ease-out;
