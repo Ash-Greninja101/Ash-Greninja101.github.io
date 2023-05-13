@@ -83,6 +83,21 @@ class BotMessageWithLink extends BotMessage {
     this.message.appendChild(alink);
   }
 }
+class BotMsgWithModal extends BotMessage {
+  constructor(message, btnText){
+    super(message);
+    let btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "btn btn-primary";
+    btn.setAttribute("data-bs-toggle", "modal");
+    btn.setAttribute("data-bs-target", "#others-modal");
+    btn.innerHTML = btnText;
+    btn.style.backgroundColor = "transparent";
+    btn.style.color = "blue";
+    btn.style.borderColor = "transparent";
+    this.message.appendChild(btn)
+  }
+}
 
 let chatbotToggler = document.getElementById("chatbot-toggler");
 let chatWindow = document.getElementsByClassName("chatbot-window")[0];
@@ -148,6 +163,7 @@ function showMsgAfterTimeout(msg, milliSec, linkInfo=null){
   let m;
   if (linkInfo !== null){
     m = new BotMessageWithLink(msg, linkInfo)
+    m.removeTail();
   } else {
     m = new BotMessage(msg);
   }
@@ -158,7 +174,7 @@ function showMsgAfterTimeout(msg, milliSec, linkInfo=null){
   sleep(milliSec).then(() => {
     b.hide();
     m.display();
-    m.scrollIntoView(true);
+    // m.scrollIntoView(true);
   })
 }
 function removeAllChildNodes(parent){
@@ -166,32 +182,48 @@ function removeAllChildNodes(parent){
     parent.removeChild(parent.firstChild);
   }
 }
+function msgShow(message, linkInfo, hasTail=true){
+  let newM = new BotMessageWithLink(message, {
+    linkName: linkInfo.linkName,
+    linkAddress: linkInfo.linkAddress
+  })
+  newM.addToDiv(chatBody);
+  if (!hasTail){
+    newM.removeTail();
+  }
+  sleep(1200).then(() => {
+
+    newM.display();
+  })
+}
 function startChatbot(){
   showMsgAfterTimeout("Hello there, I am Cosmic Cruiser your virtual assistant.", 1000);
   sleep(1000).then(() => {
     showMsgAfterTimeout("How can I help you today? Please select one:", 1000);
-    sleep(1000).then(() => {
-      showMsgAfterTimeout("To register for the program click here -> ",1000,
-      {
-        linkName: "Registration",
-        linkAddress: "booking.html"
-      })
-      showMsgAfterTimeout("To learn about the matters click here -> ",1000,
-      {
-        linkName: "Our Plans",
-        linkAddress: "packages.html"
-      })
-      showMsgAfterTimeout("To learn about the cost of the different plans click here -> ",1000,
-      {
-        linkName: "Cost of Plans",
-        linkAddress: "packages.html"
-      })
-      showMsgAfterTimeout("If none of the above work then click here -> ",1000,
-      {
-        linkName: "Others",
-        linkAddress: "packages.html"
-      })
-      
+    msgShow("",
+    {
+      linkName: "Resgistration",
+      linkAddress: "booking.html"
+    }, false);
+    msgShow("",
+    {
+      linkName: "Our Plans",
+      linkAddress: "packages.html"
+    }, false);
+    msgShow("",
+    {
+      linkName: "Cost Of Plans",
+      linkAddress: "packages.html"
+    }, false);
+    // msgShow("",
+    // {
+    //   linkName: "Others",
+    //   linkAddress: "packages.html"
+    // }, false);
+    let b = new BotMsgWithModal("", "Others");
+    b.addToDiv(chatBody);
+    sleep(1200).then(() => {
+      b.display();
     })
   })
 }

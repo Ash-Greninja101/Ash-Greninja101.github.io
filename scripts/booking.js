@@ -5,7 +5,7 @@ const registeredModal = new bootstrap.Modal("#registered-modal");
 let bodyText = document.getElementById("body-text");
 let background = document.getElementById("background");
 let submitter = document.getElementById("submitter");
-let homeBtn = document.getElementById("home-btn");
+let homeBtn = document.getElementById("home-link");
 
 Array.from(forms).forEach((form) => {
   form.addEventListener(
@@ -33,6 +33,7 @@ Array.from(forms).forEach((form) => {
 Array.from(closing_btns).forEach((closing_btn) => {
   closing_btn.onclick = () => {
     homeBtn.click();
+    // window.location.href = 
   };
 });
 window.addEventListener("DOMContentLoaded", () => {
