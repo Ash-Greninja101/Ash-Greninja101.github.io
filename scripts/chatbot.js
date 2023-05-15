@@ -1,3 +1,17 @@
+let chatbotToggler = document.getElementById("chatbot-toggler");
+let chatWindow = document.getElementsByClassName("chatbot-window")[0];
+let menuWindow = document.getElementById("offcanvasRight");
+let menuToggler = document.getElementById("menu-btn");
+let nam = document.getElementById("inputName");
+let temail = document.getElementById("inputEmail");
+let tquestion = document.getElementById("inputQuestion");
+let w = document.getElementById("form-incomplete");
+chatWindow.style.bottom = "40px";
+chatWindow.style.right = "0";
+let chatBody = document.getElementById("messages-here");
+let chatToggled = false;
+
+
 class Blinker {
   constructor(){
     this.blinker = document.createElement("div");
@@ -80,6 +94,7 @@ class BotMessageWithLink extends BotMessage {
     let alink = document.createElement("a");
     alink.innerHTML = linkInfo.linkName;
     alink.href = linkInfo.linkAddress;
+    alink.className = "btn btn-link";
     this.message.appendChild(alink);
   }
 }
@@ -92,20 +107,17 @@ class BotMsgWithModal extends BotMessage {
     btn.setAttribute("data-bs-toggle", "modal");
     btn.setAttribute("data-bs-target", "#others-modal");
     btn.innerHTML = btnText;
+    btn.onclick = () => {
+      w.style.display = "none";
+      nam.value = "";
+      temail.value = "";
+      tquestion.value = "";
+    }
     btn.style.height = this.message.style.minHeight;
     btn.style.width = this.message.style.minHeight;
     this.message.appendChild(btn)
   }
 }
-
-let chatbotToggler = document.getElementById("chatbot-toggler");
-let chatWindow = document.getElementsByClassName("chatbot-window")[0];
-let menuWindow = document.getElementById("offcanvasRight");
-let menuToggler = document.getElementById("menu-btn");
-chatWindow.style.bottom = "40px";
-chatWindow.style.right = "0";
-let chatBody = document.getElementById("messages-here");
-let chatToggled = false;
 
 function fade(element) {
   var op = 1;  // initial opacity

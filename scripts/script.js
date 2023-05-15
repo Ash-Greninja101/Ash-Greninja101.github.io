@@ -10,6 +10,8 @@ window.onload = () => {
   let toggleMenu = false;
   let mousePosition = {};
   let onPage = true;
+  let introDiv = document.getElementById("intro");
+  let spacer = document.getElementById("spacing-div");
   window.onpageshow = () => {
     console.log("back on page");
     onPage = true;
