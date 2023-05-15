@@ -544,10 +544,13 @@ div.info-section {
   margin: 2%;
   margin-bottom: 4%;
   visibility: visible;
+  transition: 0.2s ease;
 }
 .chatbot-bottom img:hover{
   cursor: pointer;
-  border-radius: 30%;
+  /* border-radius: 30%; */
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 2px black;
 }
 #form-incomplete{
   float:left;
