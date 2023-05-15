@@ -34,7 +34,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <form>
+            <form id="qForm">
               <div class="form-group row">
                 <label for="inputName" class="col-sm-2 col-form-label">Name</label>
                 <div class="col-sm-10">
@@ -48,16 +48,36 @@
                 </div>
               </div>
               <div class="form-group row">
-                <label for="inputQuestion" class="col-sm-2 col-form-label">Question</label>
+                <label for="inputQuestion" class="col-sm-2 col-form-label">Question(s)</label>
                 <div class="col-sm-10">
-                  <textarea class="form-control" id="inputQueston" ></textarea>
+                  <textarea class="form-control" id="inputQuestion" ></textarea>
                 </div>
               </div>
             </form>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Submit</button>
+          <div class="modal-footer" style="justify-content: space-between;">
+            <button type="submit" class="btn btn-primary" id="inquiry-submitter">Submit</button>
+            <div class="alert alert-danger" id="form-incomplete" role="alert" style="float:left">
+              Please fill out all sections of the form before submitting!
+            </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="submission_success" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropL" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropL">Question Submitted</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Your Question(s) has been submitted and a team member will get back to you in 24-48 hours.
+          </div>
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Understood</button>
+          </div> -->
         </div>
       </div>
     </div>
@@ -136,89 +156,100 @@
           <img src="images/man-on-moon.jpg" class="rounded float-right" alt="man-on-moon.jpg">
         </div>
       </div>
-      <p class="flip-card-header-text">
-        Join us on a journey to the stars, and let Cosmic Cruiselines take you
-        on an adventure of a lifetime.
-      </p>
+      
     </div>
     <br />
-    <div class="div-same-line" id="options-to-explore" style="margin-top: 10%">
-      <div class="card-container" onmousemove="updateTilt(this, event)" onmouseleave="resetTilt(this)">
-        <div class="card options-div" 
-        style="width: 18rem; background: rgb(200, 200, 210); " 
-        onclick="window.location='packages.html';"
-        >
-          <div class="card-body">
-            <h5 class="card-title">Travel Plans</h5>
-            <img
-              class="card-img-top"
-              src="images/training-img-pic.jpeg"
-              alt="Card image cap"
-            />
-            <hr />
-            <p class="card-text">Learn about our different space plans!</p>
-          </div>
+    <div class="front cosmic-cls-info">
+      
+      <div class="card-overview">
+        <div style="margin-left: 5%;margin-top: 1%;">
+        <p class="card-text">
+          Join us on a journey to the stars, and let Cosmic Cruiselines take you
+          on an adventure of a lifetime.
+        </p>
         </div>
-      </div>
-      <div class="card-container" onmousemove="updateTilt(this, event)" onmouseleave="resetTilt(this)">
-        <div
-          class="card options-div"
-          style="width: 18rem; background: rgb(200, 200, 210);"
-          onclick="window.location='journey_info.html';"
-        >
-          <div class="card-body">
-            <h5 class="card-title">The Journey</h5>
-            <img
-              class="card-img-top"
-              src="images/spacecraft_option.jpeg"
-              alt="Card image cap"
-            />
-            <hr />
-            <p class="card-text">Understand the steps in your space journey!</p>
-          </div>
-        </div>
-      </div>
-      <div class="card-container" onmousemove="updateTilt(this, event)" onmouseleave="resetTilt(this)">
-        <div
-          class="card options-div"
-          style="width: 18rem; background: rgb(200, 200, 210);"
-          onclick="window.location='spacecraft.html';"
-        >
-          <div class="card-body">
-            <h5 class="card-title">The Spacecraft</h5>
-            <img
-              class="card-img-top"
-              src="images/safety-img.jpeg"
-              alt="Card image cap"
-            />
-            <hr />
-            <p class="card-text">Know your spacecraft!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr style="position: relative; height:5px; z-index:6; margin-top:5%;"\>
-    <div class="div-same-line" style="margin-top: 10%;">
-      <div class="front lefted" style="margin-left:1%;">
-        <section class="contact-info">
-          <p>
-            <h1 style="text-align: center; text-decoration: underline;">Contact Info</h1>
-            <br>
-            <i class="fas fa-envelope"></i>
-            Email Address:
-            <a href="#"
-              > example@xyz.abc.com</a
+        <div class="div-same-line">
+          <div class="card-container">
+            <div class="card options-div" 
+            style="width: 18rem; background: rgb(200, 200, 210); margin: 10%;" 
+            onclick="window.location='packages.html';"
             >
-          </p>
-          <p>
-            <i class="fas fa-phone"></i>
-            Phone Number:
-            <span> (123)-456-7890</span>
-          </p>
-        </section>
+              <div class="card-body">
+                <h5 class="card-title">Travel Plans</h5>
+                <img
+                  class="card-img-top"
+                  src="images/training-img-pic.jpeg"
+                  alt="Card image cap"
+                />
+                <hr />
+                <p class="card-text">Learn about our different space plans!</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div
+              class="card options-div"
+              style="width: 18rem; background: rgb(200, 200, 210); margin: 10%;"
+              onclick="window.location='journey_info.html';"
+            >
+              <div class="card-body">
+                <h5 class="card-title">The Journey</h5>
+                <img
+                  class="card-img-top"
+                  src="images/spacecraft_option.jpeg"
+                  alt="Card image cap"
+                />
+                <hr />
+                <p class="card-text">Understand the steps in your space journey!</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div
+              class="card options-div"
+              style="width: 18rem; background: rgb(200, 200, 210); margin:10%;"
+              onclick="window.location='spacecraft.html';"
+            >
+              <div class="card-body">
+                <h5 class="card-title">The Spacecraft</h5>
+                <img
+                  class="card-img-top"
+                  src="images/safety-img.jpeg"
+                  alt="Card image cap"
+                />
+                <hr />
+                <p class="card-text">Know your spacecraft!</p>
+                <br />
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <img class="transparent-outlined" src="images/fixing-shuttle.jpg" class="rounded"style="width:50%;height: auto;" alt="person-in-space">
-    </div>
+    
+      <!-- <hr style="position:sticky;height:5px; z-index:20; margin-top:5%;"/> -->
+      <!-- <hr style="position:absolute;height:5px; z-index:6;"> -->
+      <div class="div-same-line" style="margin-top: 10%;">
+        <div class="front lefted" style="margin-left:1%;">
+          <section class="contact-info">
+            <p>
+              <h1 style="text-align: center; text-decoration: underline;">Contact Info</h1>
+              <br>
+              <i class="fas fa-envelope"></i>
+              Email Address:
+              <a href="#"
+                > example@xyz.abc.com</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-phone"></i>
+              Phone Number:
+              <span> (123)-456-7890</span>
+            </p>
+          </section>
+        </div>
+        <img class="" src="images/fixing-shuttle.jpg" class="rounded"style="width:50%;height: auto;" alt="person-in-space">
+      </div>  
     <div class="front lefted">
       <p>*Bootstrap framework was used in the development of this website.</p>
     </div>
@@ -227,26 +258,16 @@
         <h3>Chat With CC!</h3>
       </div>
       <div class="chat-body imessage" id="messages-here">
-          <!-- <p class="from-them no-tail">Hello there, I am Cosmic Cruiser your virtual assistant.</p>
-          <p class="from-them no-tail">How can I help you today? Please select one:</p>
-            <div class="typing-indicator">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>  
-          <p class="from-them no-tail"><a href="booking.html">Registration</a></p>
-          <p class="from-them no-tail"><a href="packages.html">Our Plans</a></p>
-          <p class="from-them no-tail"><a href="packages.html">Cost for Plans</a></p>
-          <p class="from-them"><a href="packages.html">Others</a></p> -->
       </div>
       <div class="sender-div"></div>
       <div class="chatbot-bottom">
-        <img src="images/chatbot.jpeg" alt="chatbot-img" id="chatbot-toggler" \>
+        <img src="images/chatbot.jpeg" alt="chatbot-img" id="chatbot-toggler" />
       </div>
     </div>
     <script src="scripts/script.js"></script>
     <script src="scripts/cardTilt.js"></script>
     <script src="scripts/chatbot.js"></script>
+    <script src="scripts/inquirySubmission.js"></script>
     <script>
       let pageHeader = document.getElementById("the-header");
       let pageHeaderDiv = document.getElementById("header-div");

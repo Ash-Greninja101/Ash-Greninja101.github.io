@@ -88,13 +88,12 @@ class BotMsgWithModal extends BotMessage {
     super(message);
     let btn = document.createElement("button");
     btn.type = "button";
-    btn.className = "btn btn-primary";
+    btn.className = "btn btn-link";
     btn.setAttribute("data-bs-toggle", "modal");
     btn.setAttribute("data-bs-target", "#others-modal");
     btn.innerHTML = btnText;
-    btn.style.backgroundColor = "transparent";
-    btn.style.color = "blue";
-    btn.style.borderColor = "transparent";
+    btn.style.height = this.message.style.minHeight;
+    btn.style.width = this.message.style.minHeight;
     this.message.appendChild(btn)
   }
 }

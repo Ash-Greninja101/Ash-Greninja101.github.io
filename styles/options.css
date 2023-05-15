@@ -202,7 +202,7 @@ hr {
 .cosmic-cls-info {
   width: 100%;
   color: white;
-  animation: fadein 7s;
+  animation: fadein 2s;
 }
 .card-text {
     font-size: 20px;
@@ -321,6 +321,7 @@ h1 {
   box-shadow: 0px 0px 20px black;
   background-color: rgb(0,0,0,0.5);
   padding: 20px;
+  animation: fadein 2s;
   
 }
 .left {
@@ -501,11 +502,12 @@ div.info-section {
   z-index: 9;
   float: right;
   bottom: 0;
-  position: sticky;
+  position: fixed;
   height: 600px;
   width: 400px;
   background-color: white;
   /* border: 10px solid black; */
+  /* display: none; */
   visibility: hidden;
   /* border-radius: 10%; */
 }
@@ -521,6 +523,7 @@ div.info-section {
   height: 10%;
   width: 100%;
   justify-content: center;
+  display: block;
 }
 .sender-div{
   height: 10%;
@@ -539,11 +542,19 @@ div.info-section {
   float: right;
   border-radius: 20%;
   margin: 2%;
+  margin-bottom: 4%;
   visibility: visible;
 }
 .chatbot-bottom img:hover{
   cursor: pointer;
   border-radius: 30%;
+}
+#form-incomplete{
+  float:left;
+  width:80%;
+  display: none;
+  text-align: center;
+  
 }
 .imessage {
   background-color: #fff;
