@@ -13,49 +13,27 @@
     crossorigin="anonymous"
   />
   <link href="../styles/options.css" rel="stylesheet" type="text/css" />
-    <title>Plan 2</title>
+  <title>Plan 2</title>
   </head>
   <body>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://kit.fontawesome.com/26d6b75079.js" crossorigin="anonymous"></script>
-    <script>
-      let slideIndex = 1;
-      let slide = document.getElementById("slide0");
-      // showSlides(slideIndex);
-
-      function plusSlides(n) {
-        showSlides((slideIndex += n));
-      }
-
-      function currentSlide(n) {
-        showSlides((slideIndex = n));
-      }
-
-      function showSlides(n) {
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        document.getElementById(
-          "slide" + (slideIndex - 1).toString()
-        ).style.display = "block";
-        dots[slideIndex - 1].className += " active";
-      }
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/26d6b75079.js" crossorigin="anonymous"></script>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title display-4" id="offcanvasRightLabel">Explore  <i class="fas fa-rocket"></i></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <a class="dropdown-item menu-item" href="../index.html">Home</a>
+      <a class="dropdown-item menu-item" href="../packages.html">Travel Plans</a>
+      <a class="dropdown-item menu-item" href="../journey_info.html">The Journey</a>
+      <a class="dropdown-item menu-item" href="../spacecraft.html">The Spacecraft</a>
+      <a class="dropdown-item menu-item" href="../booking.html">Register to Book</a>
+      <a class="dropdown-item menu-item" href="../citation.html">Sources</a>
+      <hr />
+      <a class="dropdown-item menu-item" href="../packages.html">Back</a>
+    </div>
+  </div>
     <canvas id="background">
       <div id="container"></div>
     </canvas>
@@ -70,25 +48,8 @@
       <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" id="menu-btn" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
         <img src="../images/hamburger-menu.png" id="ham-menu-btn" alt="*menu" />
       </button>
-
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title display-4" id="offcanvasRightLabel">Explore  <i class="fas fa-rocket"></i></h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <a class="dropdown-item menu-item" href="../index.html">Home</a>
-          <a class="dropdown-item menu-item" href="../packages.html">Travel Plans</a>
-          <a class="dropdown-item menu-item" href="../journey_info.html">The Journey</a>
-          <a class="dropdown-item menu-item" href="../spacecraft.html">The Spacecraft</a>
-          <a class="dropdown-item menu-item" href="../booking.html">Register to Book</a>
-          <a class="dropdown-item menu-item" href="../citation.html">Sources</a>
-          <hr />
-          <a class="dropdown-item menu-item" href="../packages.html">Back</a>
-        </div>
-      </div>
     </div>
-    <div class="body-container">
+    <div class="body-container" style="margin-top: 15%;">
       <div class="front cosmic-cls-info">
         <!-- <img src="..." class="rounded float-right" alt="..."> -->
         <div class="card overview" style="width: 100%; color: black">
@@ -141,7 +102,6 @@
         </div>
       </div>
       <div class="front cosmic-cls-info">
-        <!-- <img src="..." class="rounded float-right" alt="..."> -->
         <div class="card overview" style="width: 100%; color: black">
           <div class="card-body">
             <div>
@@ -161,89 +121,38 @@
                 advance scientific understanding and exploration of space. Don't
                 miss this unique opportunity to be part of the next frontier of
                 space exploration. Book your Space Resident package today and
-                become a contributor to space research and exploration!
+                become a contributor to space research and exploration!               
               </p>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- <div class="text">Caption Text</div> -->
-      <!-- <div class="slideshow-container">
-
-          <div class="mySlides hidden starter" id="slide0">
-            <div class="numbertext">1 / 5</div>
-            <img src="../carousel_images/shuttle.jpeg" alt="shuttle">
-            
+      <div>
+        <hr style="position: absolute; height:5px; z-index:6; margin-top:5%;"/>
+        <div class="div-same-line" style="margin-top: 10%;">
+          <div class="front lefted" style="margin-left:1%;">
+            <section class="contact-info">
+              <p>
+                <h1 style="text-align: center; text-decoration: underline;">Contact Info</h1>
+                <br>
+                <i class="fas fa-envelope"></i>
+                Email Address:
+                <a href="#"
+                  > example@xyz.abc.com</a
+                >
+              </p>
+              <p>
+                <i class="fas fa-phone"></i>
+                Phone Number:
+                <span> (123)-456-7890</span>
+              </p>
+            </section>
           </div>
-        
-          <div class="mySlides hidden" id="slide1">
-            <div class="numbertext">2 / 5</div>
-            <img src="../carousel_images/inside-1.jpeg" alt="inside-of-shuttle-1">
-          </div>
-        
-          <div class="mySlides hidden" id="slide2">
-            <div class="numbertext">3 / 5</div>
-            <img src="../carousel_images/inside-2.jpeg" alt="inside-of-shuttle-2">
-          </div>
-
-          <div class="mySlides hidden" id="slide3">
-            <div class="numbertext">4 / 5</div>
-            <img src="../carousel_images/outside-1.jpeg" alt="outside-of-shuttle-1">
-          </div>
-        
-          <div class="mySlides hidden" id="slide4">
-            <div class="numbertext">5 / 5</div>
-            <img src="../carousel_images/outside-2.jpeg" alt="outside-of-shuttle-2">
-          </div>
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <img src="../images/fixing-shuttle.jpg" class="rounded front"style="width:50%;height: auto;" alt="person-in-space" />
         </div>
-        <br>
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
-          <span class="dot" onclick="currentSlide(5)"></span>
-        </div> -->
-      <div class="container launch-retrieval">
-        <b>Launch:</b>
-        <br />
-        <span class="body-text">
-          The space shuttle is fueled with liquid hydrogen and liquid oxygen,
-          which are stored in external tanks attached to the main shuttle body.
-          Once the fueling is complete, the shuttle is moved to the launch pad and
-          secured in place. The launch countdown begins, during which various
-          systems are checked and monitored. At liftoff, the shuttle's main
-          engines ignite and the solid rocket boosters ignite a few seconds later.
-          The shuttle rises vertically into the sky, propelled by the engines and
-          boosters. After about two minutes, the boosters separate and fall back
-          to Earth, while the shuttle continues its ascent into orbit. Once the
-          shuttle reaches orbit, it separates from the external tank and prepares
-          for its mission.
-        </span>
-        <br />
-        <b>Retrieval:</b>
-        <br />
-        <span class="body-text">
-          At the end of the shuttle's mission, it prepares to return to Earth. The
-          shuttle re-enters Earth's atmosphere, which creates intense heat and
-          friction. To slow down, the shuttle deploys its landing gear and uses a
-          combination of aerodynamic braking and thruster firings. The shuttle
-          glides towards a runway, similar to a plane, and makes a horizontal
-          landing. The shuttle is then towed to a hangar for post-flight
-          processing and refurbishment, in preparation for its next mission. It's
-          important to note that the space shuttle program has been retired, with
-          the final shuttle mission taking place in 2011. However, many of the
-          technologies and techniques used in the space shuttle program continue
-          to be used in other space programs."
-        </span>
       </div>
-      <hr />
-      <div class="cost-container">
-        <h2>Cost: $3,500,000</h2>
-        <p></p>
+      <div class="front lefted">
+        <p>*Bootstrap framework was used in the development of this website.</p>
       </div>
       <div class="chatbot-window transparent-outlined">
         <div class="chatbot-top">

@@ -115,7 +115,7 @@ window.onload = () => {
   // document.onmouseleave = (e) => {
   //   allowMoving = false;
   // };
-  setInterval(createRandomStar, 200);
+  setInterval(createRandomStar, 20);
 
   function getMouseCoords(event) {
     let eventDoc, doc, body;
