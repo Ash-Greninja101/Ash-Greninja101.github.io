@@ -833,5 +833,19 @@ p[class^="from-"].emoji::before {
   .logo-text{
     display:none;
   }
+
+  .hover {
+    animation: 1s hover ease infinite alternate;
+  }
+
+  @keyframes hover {
+    from {
+      transform: translateY(20px);
+    }
+
+    to {
+      transform: translateY(0px);
+    }
+  }
   
 }
