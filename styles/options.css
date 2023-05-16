@@ -807,3 +807,34 @@ p[class^="from-"].emoji::before {
 #offcanvasRight {
   opacity: 1;
 }
+
+/* MOBILE LAYOUT */
+@media screen and (max-width: 480px) {
+
+  .card-body {
+    width:100%;
+  }
+
+  .float-right{
+    display: block;
+    float:none !important;
+    height: 50vw;
+  }
+
+  .div-same-line{
+    display:block;
+    text-align: center;
+    align-content: center;
+    width:100%;
+  }
+
+  .card-text{
+    align-content: center;
+    width:100%;
+  }
+
+  .logo-text{
+    display:none;
+  }
+  
+}
