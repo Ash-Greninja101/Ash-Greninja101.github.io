@@ -503,9 +503,6 @@ div.info-section {
   transform: scale(1.05);
 }
 
-.menu-item::before {
-  /* content: "     "; */
-}
 .chatbot-window {
   z-index: 9;
   float: right;
