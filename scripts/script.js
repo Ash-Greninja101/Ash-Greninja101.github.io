@@ -58,7 +58,7 @@ window.onload = () => {
     draw() {
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
-      ctx.fillStyle = "rgba(230, 230, 230, " + this.alpha*0.4 + ")";
+      ctx.fillStyle = "rgba(230, 230, 230, " + Math.min(this.alpha*0.4, 0.75) + ")";
       ctx.fill();
     }
     updatePos(dx, dy) {
@@ -114,7 +114,7 @@ window.onload = () => {
   function checkAndStartFadingAllStars() {
     for (let i = 0; i < starsArray.length; i++) {
       let star = starsArray[i];
-      star.updateAlphaVal(0.01);
+      star.updateAlphaVal(0.003);
       if (inBorder(star)) {
         starsArray.splice(i, 1);
         createCenterRandomStar();
