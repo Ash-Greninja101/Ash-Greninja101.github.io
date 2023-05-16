@@ -58,7 +58,7 @@ window.onload = () => {
     draw() {
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
-      ctx.fillStyle = "rgba(255, 255, 255, " + this.alpha + ")";
+      ctx.fillStyle = "rgba(230, 230, 230, " + this.alpha*0.4 + ")";
       ctx.fill();
     }
     updatePos(dx, dy) {
