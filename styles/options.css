@@ -801,8 +801,20 @@ p[class^="from-"].emoji::before {
     transform: scale(1.05);
   }
 }
+@keyframes hover {
+  from {
+    transform: translateY(20px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}
 #offcanvasRight {
   opacity: 1;
+}
+.hover {
+  animation: 1s hover ease infinite alternate;
 }
 
 /* MOBILE LAYOUT */
@@ -837,15 +849,4 @@ p[class^="from-"].emoji::before {
   .hover {
     animation: 1s hover ease infinite alternate;
   }
-
-  @keyframes hover {
-    from {
-      transform: translateY(20px);
-    }
-
-    to {
-      transform: translateY(0px);
-    }
-  }
-  
 }
