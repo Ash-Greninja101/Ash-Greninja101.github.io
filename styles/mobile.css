@@ -4,21 +4,19 @@
     .card-body {
       width:100%;
     }
-  
-    .float-right{
-      display: inline;
-      margin:auto;
-      float:none !important;
-      height: 40vw;
-      align-self: center;
-    }
 
     .card-body{
         align-content: center;
     }
+
+    .card-image{
+      width:100%;
+      height:auto;
+    }
   
     .div-same-line{
-      display:block;
+      /* display:block; */
+      margin:auto;
       text-align: center;
       align-content: center;
       width:100%;
@@ -41,6 +39,17 @@
     .form-select {
         min-width: 50vw;
         /* margin: auto; */
+    }
+
+    .sided-card-div {
+      width: 100% !important;
+    }
+
+    .card-overview {
+      width:100%;
+      margin-left: auto;
+      margin-right: auto;
+      align-items: center;
     }
     
   }
