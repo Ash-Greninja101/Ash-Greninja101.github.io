@@ -458,6 +458,12 @@ div.info-section {
   padding: 2%;
   text-align: center;
 }
+.contact-info a{
+  color: skyblue;
+}
+.contact-info a:hover{
+  color: black;
+}
 #ham-menu-btn {
   height: 50px;
   width: auto;
@@ -817,36 +823,15 @@ p[class^="from-"].emoji::before {
   animation: 1s hover ease infinite alternate;
 }
 
-/* MOBILE LAYOUT */
-@media screen and (max-width: 480px) {
-
-  .card-body {
-    width:100%;
-  }
-
-  .float-right{
-    display: block;
-    float:none !important;
-    height: 50vw;
-  }
-
-  .div-same-line{
-    display:block;
-    text-align: center;
-    align-content: center;
-    width:100%;
-  }
-
-  .card-text{
-    align-content: center;
-    width:100%;
-  }
-
-  .logo-text{
-    display:none;
-  }
-
-  .hover {
-    animation: 1s hover ease infinite alternate;
-  }
+.disclaimer {
+  width:100%;
+  color:white;
+}
+.footer{
+  /* border-radius: 20px; */
+  background: linear-gradient(150deg, rgb(34, 26, 186) 0%, rgb(96, 25, 209) 100%);
+  border: thick white 24px;
+  position: relative;
+  width: 100%;
+  color: black;
 }
