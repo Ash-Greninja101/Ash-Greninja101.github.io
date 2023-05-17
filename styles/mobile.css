@@ -61,5 +61,13 @@
       float:none !important;
       height: 50vw;
     }
+
+    .hide-on-mobile {
+      display: none;
+    }
+
+    .hide-on-desktop{
+      display:inherit;
+    }
     
   }

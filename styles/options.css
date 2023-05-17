@@ -846,3 +846,11 @@ p[class^="from-"].emoji::before {
   width: 100%;
   color: black;
 }
+
+.hide-on-mobile{
+  display:inherit;
+}
+
+.hide-on-desktop{
+  display:none;
+}
