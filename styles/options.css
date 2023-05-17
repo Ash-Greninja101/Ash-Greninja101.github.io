@@ -854,3 +854,8 @@ p[class^="from-"].emoji::before {
 .hide-on-desktop{
   display:none;
 }
+
+.page-title {
+  color:white;
+  text-align: center;
+}
