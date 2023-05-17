@@ -20,7 +20,7 @@
 #the-footer {
   width:100%;
   margin-top: 5%;
-  background: linear-gradient(150deg, rgb(34, 26, 186) 0%, rgb(96, 25, 209) 100%);
+  background: linear-gradient(150deg, rgb(34, 26, 186, 0.6) 0%, rgb(96, 25, 209, 0.6) 100%);
   color: white;
 }
 #the-footer ul{
