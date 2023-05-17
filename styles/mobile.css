@@ -7,15 +7,19 @@
 
     .card-body{
         align-content: center;
+        width:100%;
     }
 
     .card-image{
       width:100%;
       height:auto;
+      height: 50vw;
+      display: block;
+      float:none !important;
     }
   
     .div-same-line{
-      /* display:block; */
+      display:block;
       margin:auto;
       text-align: center;
       align-content: center;
@@ -50,6 +54,12 @@
       margin-left: auto;
       margin-right: auto;
       align-items: center;
+    }
+
+    .float-right{
+      display: block;
+      float:none !important;
+      height: 50vw;
     }
     
   }
