@@ -853,3 +853,8 @@ p[class^="from-"].emoji::before {
   color:white;
   text-align: center;
 }
+
+.sided-card-div {
+  padding:3% 0%;
+  width:50%;
+}
