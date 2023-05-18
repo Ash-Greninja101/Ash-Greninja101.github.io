@@ -186,8 +186,8 @@ hr {
   transform: translateY(-50%);
 }
 .div-same-line {
-  margin-left: 2%;
-  margin-right: 2%;
+  /* margin-left: 2%; */
+  /* margin-right: 2%; */
   width: 100%;
   display: flex;
   z-index: 5;
