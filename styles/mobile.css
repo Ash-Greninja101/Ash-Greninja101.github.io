@@ -85,5 +85,10 @@
     .hide-on-desktop{
       display:inherit;
     }
+
+    .img-fluid {
+      height:15rem;
+      width:auto;
+    }
     
   }

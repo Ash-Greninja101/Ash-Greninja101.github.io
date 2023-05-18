@@ -318,6 +318,7 @@ h1 {
 }
 .img-fluid {
   width: 60%;
+  align-self: center;
 }
 /* .centered .clear .left{
     margin-left: 5%;
