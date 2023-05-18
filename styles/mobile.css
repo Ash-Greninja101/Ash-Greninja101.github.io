@@ -40,6 +40,7 @@
     .card-text{
       align-content: center;
       width:100%;
+      margin:auto !important;
     }
   
     .logo-text{
@@ -65,6 +66,10 @@
       margin-left: auto;
       margin-right: auto;
       align-items: center;
+    }
+    .card-overview:hover {
+      transform: none;
+      box-shadow: none;
     }
 
     .float-right{
