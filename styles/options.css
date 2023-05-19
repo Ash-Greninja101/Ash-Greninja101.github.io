@@ -32,6 +32,7 @@ body {
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
   overflow-x: hidden;
   overflow-y: scroll;
+  overflow-wrap: break-word;
 }
 #intro {
   z-index: 9;
