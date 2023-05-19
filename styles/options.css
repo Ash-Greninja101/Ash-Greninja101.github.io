@@ -861,3 +861,7 @@ p[class^="from-"].emoji::before {
   padding:3% 0%;
   width:50%;
 }
+.card-title {
+  font-family: Courier New, monospace;
+  font-size: 40px;
+}
