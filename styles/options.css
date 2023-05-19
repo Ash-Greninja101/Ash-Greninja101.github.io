@@ -542,6 +542,7 @@ div.info-section {
 .chatbot-top {
   height: 10%;
   width: 100%;
+  text-align: center;
 }
 .chatbot-bottom {
   border-top: 5px solid black;
