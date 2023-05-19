@@ -371,6 +371,7 @@ h1 {
   width: 300px;
   height: 400px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin:auto;
 }
 .flip-card-inner {
   position: relative;

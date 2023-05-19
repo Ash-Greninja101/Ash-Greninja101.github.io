@@ -90,5 +90,9 @@
       height:15rem;
       width:auto;
     }
-    
+
+    .flip-card {
+      margin-bottom: 5%;
+      margin-top: 5%;
+    }
   }
