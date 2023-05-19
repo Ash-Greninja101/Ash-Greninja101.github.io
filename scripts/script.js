@@ -210,4 +210,9 @@ window.onload = () => {
   }
 
   update();
+
 };
+
+function hideElement(elem) {
+  elem.parentElement.style.display = "none";
+}
