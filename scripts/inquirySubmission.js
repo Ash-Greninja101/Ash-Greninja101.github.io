@@ -3,7 +3,7 @@ let email = document.getElementById("inputEmail");
 let question = document.getElementById("inputQuestion");
 let warner = document.getElementById("form-incomplete");
 let form = document.getElementById("qForm");
-let submitter = document.getElementById("inquiry-submitter");
+let sub = document.getElementById("inquiry-submitter");
 const successModal = new bootstrap.Modal("#submission_success");
 const otherModal = new bootstrap.Modal("#others-modal");
 // let url = "/Users/pandeys01/Developer/webmaster-22-23 Project/server.js";
@@ -13,7 +13,7 @@ function isEmpty(str){
     return str.trim()==="";
 };
 
-submitter.onclick =  () => {
+sub.onclick =  () => {
     if (isEmpty(n.value) || isEmpty(email.value) || isEmpty(question.value)){
         warner.style.display = 'block';
     } else {

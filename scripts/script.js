@@ -14,30 +14,29 @@ window.onload = () => {
   let spacer = document.getElementById("spacing-div");
 
   /* Storing user's device details in a variable*/
-  let details = navigator.userAgent;
+  // let details = navigator.userAgent;
     
   /* Creating a regular expression 
   containing some mobile devices keywords 
   to search it in details string*/
-  let regexp = /android|iphone|kindle|ipad/i;
+  // let regexp = /android|iphone|kindle|ipad/i;
     
   /* Using test() method to search regexp in details
   it returns boolean value*/
-  let isMobileDevice = regexp.test(details);
+  // let isMobileDevice = regexp.test(details);
     
-  if (isMobileDevice) {
-      console.log("You are using a Mobile Device");
-      screen.orientation.lock("landscape");
-      console.log("the mobile device should be forced to in landscape mode");
-  } else {
-      console.log("You are using Desktop");
-  }
+  // if (isMobileDevice) {
+  //     console.log("You are using a Mobile Device");
+  //     console.log("the mobile device should be forced to in landscape mode");
+  // } else {
+  //     console.log("You are using Desktop");
+  // }
   window.onpageshow = () => {
-    console.log("back on page");
+    // console.log("back on page");
     onPage = true;
   }
   window.onpagehide = () => {
-    console.log("not on page")
+    // console.log("not on page")
     onPage = false;
   }
   
