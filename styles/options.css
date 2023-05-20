@@ -486,8 +486,9 @@ div.info-section {
 }
 
 .card-container {
-  /* border: solid 2px red; */
   transition: 0.4s ease;
+  display: flex;
+  justify-content: space-around;
   width: 33%;
 }
 
