@@ -11,7 +11,9 @@ chatWindow.style.right = "0";
 let chatBody = document.getElementById("messages-here");
 let chatToggled = false;
 
-
+var loc = window.location.pathname;
+var dir = loc.substring(0, loc.lastIndexOf('/'));
+console.log(dir);
 class Blinker {
   constructor(){
     this.blinker = document.createElement("div");
@@ -93,7 +95,12 @@ class BotMessageWithLink extends BotMessage {
     super(message);
     let alink = document.createElement("a");
     alink.innerHTML = linkInfo.linkName;
-    alink.href = linkInfo.linkAddress;
+    if (window.location.pathname.indexOf("plans") != -1){
+      alink.href = "../"+linkInfo.linkAddress;
+    } else {
+      alink.href = linkInfo.linkAddress;
+    }
+    
     alink.className = "btn btn-link";
     this.message.appendChild(alink);
   }
@@ -210,7 +217,7 @@ function msgShow(message, linkInfo, hasTail=true){
 function startChatbot(){
   showMsgAfterTimeout("Hello there, I am Cosmic Cruiser your virtual assistant.", 1000);
   sleep(1000).then(() => {
-    showMsgAfterTimeout("How can I help you today? Please select one:", 1000);
+    showMsgAfterTimeout("What would your like to learn about? Please select one:", 1000);
     msgShow("",
     {
       linkName: "Resgistration",
@@ -223,14 +230,10 @@ function startChatbot(){
     }, false);
     msgShow("",
     {
-      linkName: "Cost Of Plans",
-      linkAddress: "packages.html"
+      linkName: "Know your Spacecraft",
+      linkAddress: "spacecraft.html"
     }, false);
-    // msgShow("",
-    // {
-    //   linkName: "Others",
-    //   linkAddress: "packages.html"
-    // }, false);
+
     let b = new BotMsgWithModal("", "Others");
     b.addToDiv(chatBody);
     sleep(1200).then(() => {
