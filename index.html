@@ -115,10 +115,18 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div> -->
-        <div id="header-div"><h1 class="display-2" style="font-family: Arial Rounded MT Bold;"><b>Welcome to Cosmic Cruiselines</b></h1><br><h1 class="display-4" style="font-family: Snell Roundhand, cursive	;">We send you to the stars above! <br> <i class="hover fas fa-sort-down"></i></h1></div>
+        <div id="header-div">
+          <h1 class="display-2" style="font-family: Arial Rounded MT Bold;"><b>Welcome to Cosmic Cruiselines</b></h1>
+          <br>
+          <h1 class="display-6" style="font-family: Arial;">We send you to the stars above!</h1>
+          <br>
+          <div class="hover"id="scroll-indicator">
+            <i class="fa-sharp fa-solid fa-chevron-down fa-5x" style="color: #ffffff;"></i>
+          </div>
+        </div>
       </div>
       
-      <div class="front cosmic-cls-info">
+      <div class="front cosmic-cls-info"id="scroll-to">
         <div class="card-overview">
           <div class="card-body div-same-line">
             <div class="sided-card-div">
@@ -298,7 +306,6 @@
         </div>
         <div class="chat-body imessage" id="messages-here">
         </div>
-        <div class="sender-div"></div>
         <div class="chatbot-bottom">
           <img src="images/chatbot.jpeg" alt="chatbot-img" id="chatbot-toggler" />
         </div>
@@ -311,6 +318,14 @@
     <script>
       let pageHeader = document.getElementById("the-header");
       let pageHeaderDiv = document.getElementById("header-div");
+      let scrollInd = document.getElementById("scroll-indicator");
+      let scrollTo = document.getElementById("scroll-to");
+      let introDiv = document.getElementById("intro");
+
+      scrollInd.onclick = (e) => {
+        e.preventDefault();
+        window.scrollBy(0, scrollTo.getBoundingClientRect().top-introDiv.clientHeight);
+      }
       pageHeader.style.height = window.innerHeight.toString()+"px";
       pageHeaderDiv.style.marginTop = (window.innerHeight/4).toString()+"px";
     </script>

@@ -547,7 +547,7 @@ div.info-section {
   float: right;
   bottom: 0;
   position: fixed;
-  height: 600px;
+  height: 570px;
   width: 400px;
   background-color: white;
   /* border: 10px solid black; */
@@ -559,23 +559,19 @@ div.info-section {
   position: sticky;
 } */
 .chatbot-top {
-  height: 10%;
+  height: 60px;
   width: 100%;
   text-align: center;
 }
 .chatbot-bottom {
-  border-top: 5px solid black;
-  height: fit-content;
+  height: 40px;
   width: 100%;
   justify-content: center;
   display: block;
 }
-.sender-div {
-  height: 10%;
-  width: 100%;
-}
+
 .chat-body {
-  height: 70%;
+  height: 420px;
   width: 100%;
   border-top: 10px solid black;
   border-bottom: 10px solid black;
@@ -827,7 +823,7 @@ p[class^="from-"].emoji::before {
 }
 @keyframes hover {
   from {
-    transform: translateY(20px);
+    transform: translateY(40px);
   }
 
   to {
@@ -839,6 +835,9 @@ p[class^="from-"].emoji::before {
 }
 .hover {
   animation: 1s hover ease infinite alternate;
+}
+.hover:hover{
+  cursor: pointer;
 }
 
 .disclaimer {
@@ -866,4 +865,12 @@ p[class^="from-"].emoji::before {
 .card-title {
   font-family: Courier New, monospace;
   font-size: 40px;
+}
+#scroll-indicator {
+  
+  display: flex;
+  justify-content: center;
+  /* position: absolute; */
+  bottom: 0;
+  
 }

@@ -4,14 +4,9 @@ window.onload = () => {
   const centerX = maxX / 2;
   const centerY = maxY / 2;
   let backgroundCanv = document.getElementById("background");
-  let menuBtn = document.getElementById("menu-btn");
   let ctx = backgroundCanv.getContext("2d");
-  let menuOptionsDiv = document.getElementById("v-pills-tab");
-  let toggleMenu = false;
   let mousePosition = {};
   let onPage = true;
-  let introDiv = document.getElementById("intro");
-  let spacer = document.getElementById("spacing-div");
 
   /* Storing user's device details in a variable*/
   // let details = navigator.userAgent;

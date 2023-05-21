@@ -13,7 +13,6 @@ let chatToggled = false;
 
 var loc = window.location.pathname;
 var dir = loc.substring(0, loc.lastIndexOf('/'));
-console.log(dir);
 class Blinker {
   constructor(){
     this.blinker = document.createElement("div");
@@ -239,5 +238,6 @@ function startChatbot(){
     sleep(1200).then(() => {
       b.display();
     })
+    b.getMsgDiv().scrollIntoView();
   })
 }
