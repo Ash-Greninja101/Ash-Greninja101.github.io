@@ -20,7 +20,7 @@
 #the-footer {
   width:100%;
   margin-top: 5%;
-  background: linear-gradient(150deg, rgb(34, 26, 186, 0.6) 0%, rgb(96, 25, 209, 0.6) 100%);
+  background: linear-gradient(150deg, rgb(13, 6, 153, 0.8) 0%, rgb(140, 4, 219, 0.8) 100%);
   color: white;
 }
 #the-footer ul{
@@ -503,6 +503,15 @@ div.info-section {
 .btn-secondary:hover {
   border: solid rgb(255, 255, 255, 0.5) 2px;
 }
+.secondary-btn {
+  transition: 0.2s ease;
+  background-color: rgb(97, 84, 199);
+  box-shadow: none;
+}
+
+.secondary-btn:focus {
+  box-shadow: none;
+}
 
 /* hamburger menu styling */
 .menu-item {
@@ -864,10 +873,19 @@ p[class^="from-"].emoji::before {
   font-size: 40px;
 }
 #scroll-indicator {
-  
   display: flex;
   justify-content: center;
   /* position: absolute; */
   bottom: 0;
-  
+}
+.sources{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+}
+.contact-info-link{
+  color:lightblue;
+}
+.contact-info-link:hover{
+  color:skyblue;
 }
