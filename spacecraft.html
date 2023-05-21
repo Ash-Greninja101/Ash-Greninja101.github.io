@@ -24,68 +24,140 @@
     <canvas id="background">
       <div id="container"></div>
     </canvas>
-    <div class="modal fade" id="others-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="others-modal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-xl">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="staticBackdropLabel">Inquiry Form</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
           <div class="modal-body">
             <form id="qForm">
               <div class="form-group row">
-                <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                <label for="inputName" class="col-sm-2 col-form-label"
+                  >Name</label
+                >
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" id="inputName" placeholder="Your Name">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputName"
+                    placeholder="Your Name"
+                  />
                 </div>
               </div>
               <div class="form-group row">
-                <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                <label for="inputEmail" class="col-sm-2 col-form-label"
+                  >Email</label
+                >
                 <div class="col-sm-10">
-                  <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputEmail"
+                    placeholder="Email"
+                  />
                 </div>
               </div>
               <div class="form-group row">
-                <label for="inputQuestion" class="col-sm-2 col-form-label">Question(s)</label>
+                <label for="inputQuestion" class="col-sm-2 col-form-label"
+                  >Question(s)</label
+                >
                 <div class="col-sm-10">
-                  <textarea class="form-control" id="inputQuestion" ></textarea>
+                  <textarea class="form-control" id="inputQuestion"></textarea>
                 </div>
               </div>
             </form>
           </div>
-          <div class="modal-footer" style="justify-content: space-between;">
-            <button type="submit" class="btn btn-primary" id="inquiry-submitter">Submit</button>
-            <div class="alert alert-danger" id="form-incomplete" role="alert" style="float:left">
+          <div class="modal-footer" style="justify-content: space-between">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              id="inquiry-submitter"
+            >
+              Submit
+            </button>
+            <div
+              class="alert alert-danger"
+              id="form-incomplete"
+              role="alert"
+              style="float: left"
+            >
               Please fill out all sections of the form before submitting!
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="modal fade" id="submission_success" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropL" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="submission_success"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropL"
+      aria-hidden="true"
+    >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="staticBackdropL">Inquiry Submitted</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
           <div class="modal-body">
-            Your inquiry has been submitted and a team member will get back to you within 48 hours.
+            Your inquiry has been submitted and a team member will get back to
+            you within 48 hours.
           </div>
         </div>
       </div>
     </div>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title display-4" id="offcanvasRightLabel">Explore  <i class="fas fa-rocket"></i></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <h5 class="offcanvas-title display-4" id="offcanvasRightLabel">
+          Explore <i class="fas fa-rocket"></i>
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
       </div>
       <div class="offcanvas-body">
         <a class="dropdown-item menu-item" href="index.html">Home</a>
         <a class="dropdown-item menu-item" href="packages.html">Travel Plans</a>
-        <a class="dropdown-item menu-item" href="journey_info.html">The Journey</a>
-        <a class="dropdown-item menu-item" href="spacecraft.html">The Spacecraft</a>
-        <a class="dropdown-item menu-item" href="booking.html">Register to Book</a>
+        <a class="dropdown-item menu-item" href="journey_info.html"
+          >The Journey</a
+        >
+        <a class="dropdown-item menu-item" href="spacecraft.html"
+          >The Spacecraft</a
+        >
+        <a class="dropdown-item menu-item" href="booking.html"
+          >Register to Book</a
+        >
         <a class="dropdown-item menu-item" href="citation.html">Sources</a>
       </div>
     </div>
@@ -98,18 +170,23 @@
         </div>
         <h3 class="hide-on-mobile">The Spacecraft</h3>
       </div>
-      <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" id="menu-btn" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+      <button
+        class="btn btn-secondary"
+        type="button"
+        data-bs-toggle="offcanvas"
+        id="menu-btn"
+        data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight"
+      >
         <img src="images/hamburger-menu.png" id="ham-menu-btn" alt="*menu" />
       </button>
     </div>
     <div class="body-container">
-      <div
-        class="upper-centered left"
-      >
+      <div class="upper-centered left">
         <img
           src="images/space-shuttle-img.png"
           class="img-fluid front"
-          style="margin-left: 20px;"
+          style="margin-left: 20px"
           alt="the_space_shuttle"
         />
         At Cosmic Cruiselines, we are proud to offer our space tourists the
@@ -119,10 +196,10 @@
         space.
         <br />
         <br />
-        The Celestial Voyager is a reusable spacecraft that is capable of carrying
-        up to six passengers and two pilots to low Earth orbit. The spacecraft is
-        approximately 12 meters long and 4 meters wide, and it is powered by a
-        combination of liquid oxygen and liquid hydrogen engines.
+        The Celestial Voyager is a reusable spacecraft that is capable of
+        carrying up to six passengers and two pilots to low Earth orbit. The
+        spacecraft is approximately 12 meters long and 4 meters wide, and it is
+        powered by a combination of liquid oxygen and liquid hydrogen engines.
         <br />
         <br />
         The spacecraft is equipped with a range of advanced technologies,
@@ -133,10 +210,10 @@
         spacecraft can withstand the extreme temperatures of space travel.
         <br />
         <br />
-        The spacecraft also features large windows that provide stunning views of
-        the Earth and the cosmos beyond. Passengers can enjoy a weightless
-        experience as they float around the cabin, taking in the incredible sights
-        and sensations of space travel.
+        The spacecraft also features large windows that provide stunning views
+        of the Earth and the cosmos beyond. Passengers can enjoy a weightless
+        experience as they float around the cabin, taking in the incredible
+        sights and sensations of space travel.
         <br />
         <br />
         The Celestial Voyager is designed to be both safe and environmentally
@@ -144,49 +221,78 @@
         minimizes waste and reduces the environmental impact of space travel.
         <br />
         <br />
-        In summary, the Celestial Voyager is a cutting-edge spacecraft designed to
-        provide a safe, comfortable, and unforgettable journey to space for our
-        space tourists. With advanced technologies and a commitment to safety and
-        sustainability, the Celestial Voyager is the perfect spacecraft for the
-        adventure of a lifetime.
+        In summary, the Celestial Voyager is a cutting-edge spacecraft designed
+        to provide a safe, comfortable, and unforgettable journey to space for
+        our space tourists. With advanced technologies and a commitment to
+        safety and sustainability, the Celestial Voyager is the perfect
+        spacecraft for the adventure of a lifetime.
       </div>
-      <footer class="py-5 front"id="the-footer">
-        <div class="row" style="justify-content: space-around;">
+      <footer class="py-5 front" id="the-footer">
+        <div class="row" style="justify-content: space-around">
           <div class="col-6 col-md-2 mb-3">
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 link-light">Home</a></li>
-              <li class="nav-item mb-2"><a href="packages.html" class="nav-link p-0 link-light">Travel Plans</a></li>
-              <li class="nav-item mb-2"><a href="journey_info.html" class="nav-link p-0 link-light">The Journey</a></li>
-              <li class="nav-item mb-2"><a href="spacecraft.html" class="nav-link p-0 link-light">The Spacecraft</a></li>
-              <li class="nav-item mb-2"><a href="booking.html" class="nav-link p-0 link-light">Registration</a></li>
+              <li class="nav-item mb-2">
+                <a href="index.html" class="nav-link p-0 link-light">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="packages.html" class="nav-link p-0 link-light"
+                  >Travel Plans</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="journey_info.html" class="nav-link p-0 link-light"
+                  >The Journey</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="spacecraft.html" class="nav-link p-0 link-light"
+                  >The Spacecraft</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="booking.html" class="nav-link p-0 link-light"
+                  >Registration</a
+                >
+              </li>
             </ul>
           </div>
-          
+
           <div class="col-md-5 offset-md-1 mb-3">
-              <p>
-                <i class="fas fa-envelope"></i>
-                Email Address:
-                <a class="contact-info-link"href="mailto:example@xyz.abc.com">example@xyz.abc.com</a>
-              </p>
-              <p>
-                <i class="fas fa-phone"></i>
-                Phone Number:
-                <a class="contact-info-link"href="tel:+11234567890">(123)-456-7890</a>
-              </p>
-              <br>
+            <p>
+              <i class="fas fa-envelope"></i>
+              Email Address:
+              <a class="contact-info-link" href="mailto:example@xyz.abc.com"
+                >example@xyz.abc.com</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-phone"></i>
+              Phone Number:
+              <a class="contact-info-link" href="tel:+11234567890" style="text-decoration:none;">(123)-456-7890</a>
+            </p>
+            <br />
             <form>
               <h5>Subscribe to our newsletter</h5>
               <p>Learn what's new and exciting about Cosmic Cruiselines!</p>
               <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                <label for="newsletter1" class="visually-hidden">Email address</label>
-                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <label for="newsletter1" class="visually-hidden"
+                  >Email address</label
+                >
+                <input
+                  id="newsletter1"
+                  type="text"
+                  class="form-control"
+                  placeholder="Email address"
+                />
                 <button class="btn btn-primary" type="button">Subscribe</button>
               </div>
             </form>
           </div>
         </div>
-    
-        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+        >
           <p>© 2023 Cosmic Cruiselines, Inc. All rights reserved.</p>
         </div>
       </footer>
@@ -194,11 +300,15 @@
         <div class="chatbot-top">
           <h3>Chat With CC!</h3>
         </div>
-        <div class="chat-body imessage" id="messages-here">
-        </div>
+        <div class="chat-body imessage" id="messages-here"></div>
         <div class="sender-div"></div>
         <div class="chatbot-bottom">
-          <img src="images/chatbot.jpeg" alt="chatbot-img" id="chatbot-toggler" \>
+          <img
+            src="images/chatbot.jpeg"
+            alt="chatbot-img"
+            id="chatbot-toggler"
+            \
+          />
         </div>
       </div>
     </div>
