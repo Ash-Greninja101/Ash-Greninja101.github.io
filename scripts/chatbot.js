@@ -219,7 +219,7 @@ function startChatbot(){
     showMsgAfterTimeout("What would your like to learn about? Please select one:", 1000);
     msgShow("",
     {
-      linkName: "Resgistration",
+      linkName: "Registration",
       linkAddress: "booking.html"
     }, false);
     msgShow("",
